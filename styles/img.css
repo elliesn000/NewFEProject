@@ -1,0 +1,30 @@
+.logo-img{
+    background-color: lightgrey;    
+    width: 200px;
+    
+}
+
+.icon-weather-img{
+    margin-left: 10px;
+    width:30px;
+}
+
+.icon-fb-img{
+    margin-left: 10px;
+    width: 15px;
+}
+
+.icon-x-img{
+    margin-left: 10px;
+    width: 15px;
+}
+
+.icon-search-img{
+    margin-left: 10px;
+    width: 15px;
+}
+
+.icon-person-img{
+    margin-left: 10px;
+    width: 15px;
+}
