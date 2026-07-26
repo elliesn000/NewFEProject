@@ -1,0 +1,67 @@
+.paper{
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.trending-tab{
+    background-color: lightgreen;
+    display: flex;
+    height: 40px;
+}
+
+.left-trending-tab{
+    /* background-color: lightblue; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 1640px;
+
+    
+}
+
+.trending-text{
+    /* background-color: aliceblue; */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left:30px;
+}
+
+.trending-title-text{
+    color: rgb(128, 9, 9);
+    font-weight: lighter;    
+    margin-left: 0px;
+}
+
+.right-trending-tab{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;    
+}
+.degree-text{
+    color: green;
+}
+
+
+.trending-news{
+    display: flex;
+    height: 500px;
+}
+.trending-news-1{
+    background-color: lightblue;
+    display: flex;
+    flex:2;
+    align-items: start;
+}
+.trending-news-2{
+    background-color: lightpink;
+    display: flex;
+    flex: 1;
+}
+.trending-news-3{
+    background-color: lightskyblue;
+    display: flex;
+    flex: 1;
+}

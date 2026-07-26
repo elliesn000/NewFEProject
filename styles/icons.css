@@ -1,0 +1,35 @@
+.logo-img{
+    /* background-color: lightgrey;     */
+    width: 200px;    
+    cursor: pointer;
+    
+}
+
+.icon-header{
+    width: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.icon-weather-img{
+    width:30px;
+    cursor: pointer;
+}
+
+
+.icon-person-img{
+    opacity: 0.5;
+    width: 25px;
+}
+
+.icon-home-img{    
+    background-color: rgb(128, 9, 9);    
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;    
+}
