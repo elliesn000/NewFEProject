@@ -1,0 +1,10 @@
+.news-1-img{
+    /* background-color: lightgoldenrodyellow; */
+    object-fit: contain;
+    width: 620px;
+}
+
+.news-2-img{
+    object-fit: contain;
+    width: 300px;
+}

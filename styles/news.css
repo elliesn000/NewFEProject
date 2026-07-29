@@ -1,0 +1,36 @@
+.news-title{
+    /* background-color: antiquewhite; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.news-title-smaller{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.news-info{
+    /* background-color: bisque; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.news-info-smaller{
+    font-size: 15px;
+}
+
+.news-1-line{
+    font-weight: bolder;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
