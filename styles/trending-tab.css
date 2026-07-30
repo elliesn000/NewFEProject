@@ -1,5 +1,7 @@
 .trending-tab{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    font-family: "Montserrat";
+    font-size: 14px;
     display: flex;
     height: 40px;
 }
@@ -16,19 +18,19 @@
     /* background-color: aliceblue; */
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     color: rgba(0, 0, 0, 0.8);
-    margin-left:30px;
+    margin-left: 32px;
 }
 
 .trending-title-text{
     color: rgb(128, 9, 9);
-    font-weight: lighter;    
+    font-weight: normal;   
     margin-left: 0px;
 }
 
 .right-trending-tab{
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     display: flex;
     align-items: center;    
 }

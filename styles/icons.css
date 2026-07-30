@@ -25,11 +25,46 @@
 }
 
 .icon-home-img{    
-    background-color: rgb(128, 9, 9);    
+    background-color: rgba(84, 6, 6, 0.684); 
     height: 20px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     cursor: pointer;    
+}
+
+.icon-phone-img{
+    height: 13px;
+    opacity: 0.3;
+
+    margin-right: 5px;
+}
+
+.icon-e-img{
+    width: 21px;
+    margin-right: 10px;
+}
+
+
+.icon-apple-img{
+    height: 24px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    margin-bottom: -3px;
+}
+
+.icon-ggplay-img{
+    height: 24px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+
+}
+
+.icon-qr-img{
+    height: 54px;
 }

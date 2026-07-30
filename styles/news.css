@@ -5,6 +5,10 @@
     font-size: 25px;
     margin-top: 6px;
     margin-bottom: 6px;
+    cursor: pointer;
+}
+.news-title:hover{
+    text-decoration: underline;
 }
 .news-title-smaller{
     font-size: 18px;
@@ -17,9 +21,11 @@
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 .news-info-smaller{
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .news-1-line{
@@ -28,6 +34,7 @@
     color: rgba(0, 0, 0, 0.2);
     margin-top: 0px;
     margin-bottom: 10px;
+    padding-left: 0;
 }
 
 

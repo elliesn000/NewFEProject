@@ -2,9 +2,11 @@
     /* background-color: lightgoldenrodyellow; */
     object-fit: contain;
     width: 620px;
+    cursor: pointer;
 }
 
 .news-2-img{
     object-fit: contain;
     width: 300px;
+    cursor: pointer;
 }

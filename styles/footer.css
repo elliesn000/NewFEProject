@@ -1,0 +1,106 @@
+.footer{
+    background-color: rgb(220, 219, 219);
+    font-family: "Montserrat";
+    font-size: 12px;
+    border: 1px;
+
+    border-top-style: solid;
+    border-color: rgb(177, 177, 177);
+
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-main{
+    /* background-color: lightblue; */
+    display: flex;    
+}
+.footer-collumns{
+    /* background-color: lightyellow; */
+    width: 77px;
+    margin-right: 8px;
+}
+.footer-collumns-custom{    
+    width: 98px;
+}
+
+.footer-title{
+    /* background-color: lightskyblue; */
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0px;
+}
+.footer-index{
+    /* background-color: lightgrey; */
+    line-height: 25px;
+
+    padding-top: 5px;    
+}
+.footer-index-nearer{
+    margin-top: -12px;    
+    line-height: 18px;
+}
+
+.footer-contact{
+    /* background-color: lightslategray; */
+    margin-left: 85px;
+    padding-left: 15px;
+
+    border-color: rgb(177, 177, 177);
+    border: 1px;
+    border-left-style:inset;
+
+}
+.footer-contact-info{
+    /* background-color: lightyellow; */
+    display:flex;
+    
+    margin-top: -15px;
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+
+.footer-download{
+    /* background-color: lightslategray; */
+    margin-left: 91px;
+}
+.footer-download-title{
+    font-size: 12px;
+    
+}
+.footer-download-info{
+    /* background-color: lightyellow; */
+    font-size: 12px;
+    font-weight: bold;
+    display:flex;
+    align-items: center;        
+}
+
+.icon-group{
+    /* background-color: lemonchiffon; */
+    display: flex;
+    margin-top: 6px;    
+}
+
+
+.footer-info{
+    background-color: white;
+    font-family: "Montserrat";
+    font-size: 10px;
+
+    display: flex;
+    
+}
+.footer-info-collumns{
+    /* background-color: lightskyblue; */
+    flex:1;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+

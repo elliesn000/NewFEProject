@@ -1,5 +1,6 @@
 .main-menu{
     background-color: rgb(147, 32, 72);
+    font-family: "Montserrat";
     height: 40px;
     display: flex;
     margin-left: 20px;
@@ -19,7 +20,7 @@
 .main-menu-text{
     /* background-color: aquamarine; */
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-weight: bold;
     height: 16px;
     cursor: pointer;
@@ -30,7 +31,7 @@
 }
 
 .main-menu-text:hover{
-    background-color: rgb(128, 9, 9);    
+    background-color: rgba(84, 6, 6, 0.684); 
 }
 
 
@@ -38,8 +39,8 @@
     display: flex;    
     align-items: center;
     color: white;
-    font-weight: bold;
-    font-size: 15px;
+    
+    font-size: 13px;
     cursor: pointer;
-    padding-right: 15px;
+    padding-right: 10px;
 }
