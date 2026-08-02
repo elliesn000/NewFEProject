@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="styles/news.css">
     <link rel="stylesheet" href="styles/paper.css">
     <link rel="stylesheet" href="styles/right-most.css">
+    <link rel="stylesheet" href="styles/sub-menu.css">
     <link rel="stylesheet" href="styles/trending-tab.css">
 
-
+    <script src="sub-menu.js"></script>
 </head>
 
 
@@ -81,9 +82,27 @@
     <div class="main-menu">
         <div class="left-main-menu-section">
             <img class="icon-home-img" src="images/icon-home.png" alt="">
-            <p class="main-menu-text">
-                News
-            </p>
+
+
+            <div onmousemove="subMenu()" onmouseout="exitMenu()" class="main-menu-text">
+                <div >News</div> 
+                <div id="subMenuPopup" class="sub-menu">
+                <p class="text-sub-menu">Politics</p>
+                <p class="text-sub-menu">Education</p>
+                <p class="text-sub-menu">Enviroment</p>
+                <p class="text-sub-menu">Traffic</p>
+                <p class="text-sub-menu">Crime</p>
+                <p class="text-sub-menu">Brainteaser</p>
+            </div>
+            </div>
+            
+
+
+
+
+
+
+
             <p class="main-menu-text">
                 Business
             </p>
@@ -408,7 +427,8 @@
                 Editor-in-Chief: Pham Van Hieu
             </p>
             <p>
-                Email: evne@vnexpress.net &#8739 Tel: 028 7300 9999 - Ext 8556 10th floor, Block A FPT Tower, 10 Pham Van Bach, Cau Giay Ward, Hanoi
+                Email: evne@vnexpress.net &#8739 Tel: 028 7300 9999 - Ext 8556 10th floor, Block A FPT Tower, 10 Pham
+                Van Bach, Cau Giay Ward, Hanoi
             </p>
         </div>
         <div class="footer-info-collumns">
@@ -416,10 +436,7 @@
                 © Copyright 1997-2026 VnExpress.net. All rights reserved.
             </p>
         </div>
-
     </div>
-
-
 
 
 </body>

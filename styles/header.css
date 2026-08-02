@@ -1,3 +1,6 @@
+body{
+    font-family: "Montserrat";
+}
 .header-section{
     /* background-color: lightpink; */
     display: flex;

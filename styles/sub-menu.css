@@ -1,0 +1,27 @@
+.sub-menu{
+    background-color: white;
+    display: none;
+    position: absolute;
+    font-weight: bold;
+   
+    font-size: 14px;
+    width: 120px;
+}
+
+.show-sub-menu{
+    display: block;
+}
+
+
+.text-sub-menu{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-sub-menu:hover{
+    background-color: rgb(147, 32, 72);
+}
