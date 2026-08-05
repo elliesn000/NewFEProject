@@ -53,6 +53,8 @@
 }
 .right-most-text{
     /* background-color: antiquewhite; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     cursor: pointer;
 }
 .right-most-text:hover{

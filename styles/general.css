@@ -1,0 +1,116 @@
+body{
+    font-family: "Montserrat";
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+/*----------general------------------------- */
+.general{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1260px 1fr;
+    margin-bottom: 10px;
+}
+
+.left-section{
+    background-color: lightblue;
+}
+
+.right-section{
+    background-color: lightcyan;
+}
+
+
+.mid-section{
+    /* background-color: antiquewhite; */
+}
+
+
+/*----------header--------------------------- */
+.header{
+    /* background-color: lightpink;     */
+    display: grid;
+    grid-template-columns: 190px 1fr 620px;
+}
+
+.left-header{    
+    /* background-color: lightblue; */
+    object-fit: contain;
+}
+
+.mid-header{
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+
+    margin-left: 25px;
+}
+
+.right-header{
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+
+/*---------------main-menu--------------------*/
+.main-menu{
+    background-color: rgb(147, 32, 72);    
+    display: grid;
+    grid-template-columns: 1fr 120px;
+}
+
+
+.left-main-menu{
+    /* background-color: antiquewhite;     */
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+}
+
+.right-main-menu{
+    display: flex;    
+    align-items: center;
+}
+
+
+
+/*---------------trending-tab--------------------*/
+.trending-tab{
+    /* background-color: lightgreen; */
+    display: grid;
+    grid-template-columns: 1fr 260px;    
+}
+.left-trending-tab{
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+.right-trending-tab{
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    align-items: center;
+}
+
+
+/*---------------news--------------------*/
+.news{
+    display: grid;
+    grid-template-columns: 1fr 340px 300px ;
+}
+.news-left{
+    background-color: lightblue;
+}
+.news-mid{
+    background-color: lightpink;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.news-right{
+    background-color: lightblue;
+    height: 520px;
+}
+
+

@@ -2,442 +2,474 @@
 <html>
 
 <head>
-    <title>
-        VnExpress Clone
-    </title>
+  <title>
+    VnExpress Clone
+  </title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/icons.css">
-    <link rel="stylesheet" href="styles/images.css">
-    <link rel="stylesheet" href="styles/main-menu.css">
-    <link rel="stylesheet" href="styles/news.css">
-    <link rel="stylesheet" href="styles/paper.css">
-    <link rel="stylesheet" href="styles/right-most.css">
-    <link rel="stylesheet" href="styles/sub-menu.css">
-    <link rel="stylesheet" href="styles/trending-tab.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 
-    <script src="sub-menu.js"></script>
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/images.css">
+  <link rel="stylesheet" href="styles/news.css">
+  <link rel="stylesheet" href="styles/right-most.css">
+  <link rel="stylesheet" href="styles/sub-menu.css">
+  <link rel="stylesheet" href="styles/text.css">
+
+  <script src="sub-menu.js"></script>
 </head>
 
 
 <body>
-    <div class="header-section">
+  <div class="general">
 
-        <div class="left-header-section">
-            <img class="logo-img" src="images/logo.svg">
+    <div class="left-section"></div>
+
+
+    <div class="mid-section">
+
+      <div class="header">
+
+        <div class="left-header">
+          <img class="logo-img" src="images/logo.svg">
+        </div>
+
+        <div class="mid-header">
+          The most read Vietnamese newspaper
+        </div>
+
+        <div class="right-header">
+          <span class="menu-header-text">HCMC</span>
+          <span class="between-text">&#8739</span>
+
+          <img class="icon-header icon-weather" src="images/icon-weather.svg">
+
+          <span class="menu-header-text">30&#176</span>
+          <span class="between-text">&#8739</span>
+
+          <span class="menu-header-text">
+            Vietnamese Edition
+          </span>
+          <span class="between-text">&#8739</span>
+
+          <span class="menu-header-text">
+            Contact us
+          </span>
+          <span class="between-text">&#8739</span>
+
+          <span class="menu-header-text">
+            Follow us on
+          </span>
+
+          <img class="icon-header" src="images/icon-fb.svg">
+          <img class="icon-header" src="images/icon-x.svg">
+
+
+          <input class="search-bar" type="text" placeholder="Search">
+
+          <span class="between-text">&#8739</span>
+
+          <img class="icon-header" src="images/icon-search.svg">
+          <img class="icon-header icon-person" src="images/icon-person.svg" alt="">
+
+          <span class="menu-header-text">
+            Log In
+          </span>
 
         </div>
 
-        <div class="mid-header-section">
-            The most read Vietnamese newspaper
+      </div>
 
+
+
+
+
+
+
+      <div class="main-menu">
+
+        <div class="left-main-menu">
+          <img class="icon-home" src="images/icon-home.png" alt="">
+
+          <div onmousemove="subMenu()" onmouseout="exitMenu()" class="main-menu-text">
+            <div>News</div>
+            <div id="subMenuPopup" class="sub-menu">
+              <p class="text-sub-menu">Politics</p>
+              <p class="text-sub-menu">Education</p>
+              <p class="text-sub-menu">Enviroment</p>
+              <p class="text-sub-menu">Traffic</p>
+              <p class="text-sub-menu">Crime</p>
+              <p class="text-sub-menu">Brainteaser</p>
+            </div>
+          </div>
+
+          <p class="main-menu-text">
+            Business
+          </p>
+          <p class="main-menu-text">
+            Tech
+          </p>
+          <p class="main-menu-text">
+            Travel
+          </p>
+          <p class="main-menu-text">
+            Life
+          </p>
+          <p class="main-menu-text">
+            Sports
+          </p>
+          <p class="main-menu-text">
+            World
+          </p>
+          <p class="main-menu-text">
+            Perspectives
+          </p>
+          <p class="main-menu-text">
+            VnE-GO
+          </p>
         </div>
 
-        <div class="right-header-section">
-            <span class="menu-header-text">
-                HCMC
+        <div class="right-main-menu">
+          <p class="main-menu-text">
+            &#8801 All sections
+          </p>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="trending-tab">
+
+        <div class="left-trending-tab">
+          <span class="trending-text trending-title-text">
+            Trending
+          </span>
+          <span class="trending-text">
+            2026 ASEAN Cup
+          </span>
+          <span class="trending-text">
+            Hanoi master plan
+          </span>
+          <span class="trending-text">
+            2026 World Cup
+          </span>
+          <span class="trending-text">
+            Long Thanh airport
+          </span>
+        </div>
+
+        <div class="right-trending-tab">
+          <p class="trending-text">
+            HCMC air quality
+            <span class="degree-text">
+              28 Good &#10132
             </span>
-
-            <img class="icon-header icon-weather-img" src="images/icon-weather.svg">
-
-            <span class="menu-header-text">
-                30&#176
-            </span>
-            <span class="between-text">&#8739</span>
-
-            <span class="menu-header-text">
-                Vietnamese Edition
-            </span>
-            <span class="between-text">&#8739</span>
-
-            <span class="menu-header-text">
-                Contact us
-            </span>
-            <span class="between-text">&#8739</span>
-
-            <span class="menu-header-text">
-                Follow us on
-            </span>
-            <img class="icon-header" src="images/icon-fb.svg">
-            <img class="icon-header" src="images/icon-x.svg">
-            <span class="between-text">&#8739</span>
-
-            <img class="icon-header" src="images/icon-search.svg">
-            <img class="icon-header icon-person-img" src="images/icon-person.svg" alt="">
-            <span class="menu-header-text">
-                Log In
-            </span>
-
+          </p>
         </div>
 
-    </div>
-
-
-    <div class="main-menu">
-        <div class="left-main-menu-section">
-            <img class="icon-home-img" src="images/icon-home.png" alt="">
-
-
-            <div onmousemove="subMenu()" onmouseout="exitMenu()" class="main-menu-text">
-                <div >News</div> 
-                <div id="subMenuPopup" class="sub-menu">
-                <p class="text-sub-menu">Politics</p>
-                <p class="text-sub-menu">Education</p>
-                <p class="text-sub-menu">Enviroment</p>
-                <p class="text-sub-menu">Traffic</p>
-                <p class="text-sub-menu">Crime</p>
-                <p class="text-sub-menu">Brainteaser</p>
-            </div>
-            </div>
-            
+      </div>
 
 
 
 
 
 
+      <div class="news">
+        <div class="news-left">
+          <img class="news-1-img" src="images/news1-trending.webp">
+          <p class="news-title">
+            Dozens feared trapped in quake-hit Japan mall
+          </p>
+          <p class="news-info">
+            Dozens of people were feared trapped in a shopping mall in Japan on Tuesday after a major
+            earthquake
+            toppled buildings, sparked fires and reportedly killed one person and injured more than 100.
+          </p>
+          <p class="news-1-line">
+            _____________________________________________________________________
+          </p>
 
-            <p class="main-menu-text">
-                Business
-            </p>
-            <p class="main-menu-text">
-                Tech
-            </p>
-            <p class="main-menu-text">
-                Travel
-            </p>
-            <p class="main-menu-text">
-                Life
-            </p>
-            <p class="main-menu-text">
-                Sports
-            </p>
-            <p class="main-menu-text">
-                World
-            </p>
-            <p class="main-menu-text">
-                Perspectives
-            </p>
-            <p class="main-menu-text">
-                VnE-GO
-            </p>
+          <p class="news-title">
+            Scientists say math can reveal patterns in love
+          </p>
+          <p class="news-info">
+            Mathematical models developed over three decades of research suggest romantic relationships
+            follow
+            measurable patterns that could help identify when couples are approaching a higher risk of
+            separation.
+          </p>
         </div>
 
-        <div class="right-main-menu-section">
-            <p>
-                &#8801 All sections
-            </p>
+        <div class="news-mid">
+          <img class="news-2-img" src="images/news2-1-trending.webp" alt="">
+          <p class="news-title news-title-smaller">
+            Which Singapore university leads Southeast Asia in mathematics?
+          </p>
+          <p class="news-info news-info-smaller">
+            The university is ranked 32nd worldwide for mathematics in the latest U.S. News Best Global
+            Universities rankings, the highest position achieved by any Southeast Asian institution.
+          </p>
 
+          <img class="news-2-img" src="images/news2-2-trending.webp" alt="">
+          <p class="news-title news-title-smaller">
+            Three Japanese restaurant staff jailed in Taiwan for serving expired wagyu
+          </p>
+          <p class="news-info news-info-smaller">
+            Three Japanese nationals who operated a barbecue restaurant in Taichung, Taiwan, have been
+            sentenced
+            to prison for knowingly serving customers expired wagyu beef.
+          </p>
         </div>
 
-    </div>
-
-    <div class="paper">
-        <div class="trending-tab">
-            <div class="left-trending-tab">
-                <span class="trending-text trending-title-text">
-                    Trending
-                </span>
-                <span class="trending-text">
-                    2026 ASEAN Cup
-                </span>
-                <span class="trending-text">
-                    Hanoi master plan
-                </span>
-                <span class="trending-text">
-                    2026 World Cup
-                </span>
-                <span class="trending-text">
-                    Long Thanh airport
-                </span>
+        <div class="news-right">
+          <div class="right-most-top">
+            <span class="right-most-read">
+              Most Read
+            </span>
+            <span class="right-most-comment">
+              Most Commented
+            </span>
+          </div>
+          <div class="right-most-bot">
+            <div class="right-most-qtt">
+              1
             </div>
-
-            <div class="right-trending-tab">
-                <p class="trending-text">
-                    HCMC air quality
-                    <span class="degree-text">
-                        28 Good &#10132
-                    </span>
-                </p>
-
+            <div class="right-most-text">
+              World's second-richest country offers nearly $400 in credits for youth to pursue hobbies
+              and
+              life skills
             </div>
+          </div>
+          <div class="right-most-bot">
+            <div class="right-most-qtt">
+              2
+            </div>
+            <div class="right-most-text">
+              World's second-richest country leads Southeast Asia with two universities in global AI
+              top
+              10
+            </div>
+          </div>
+          <div class="right-most-bot">
+            <div class="right-most-qtt">
+              3
+            </div>
+            <div class="right-most-text">
+              From artist dream to global food brand: How George Quek built Singapore's BreadTalk
+              Group
+            </div>
+          </div>
+          <div class="right-most-bot">
+            <div class="right-most-qtt">
+              4
+            </div>
+            <div class="right-most-text">
+              Which Singapore university leads Southeast Asia in mathematics?
+            </div>
+          </div>
         </div>
-
-        <div class="trending-news">
-            <div class="news-left">
-                <img class="news-1-img" src="images/news1-trending.webp">
-                <p class="news-title">
-                    Dozens feared trapped in quake-hit Japan mall
-                </p>
-                <p class="news-info">
-                    Dozens of people were feared trapped in a shopping mall in Japan on Tuesday after a major earthquake
-                    toppled buildings, sparked fires and reportedly killed one person and injured more than 100.
-                </p>
-                <p class="news-1-line">
-                    _____________________________________________________________________
-                </p>
-
-                <p class="news-title">
-                    Scientists say math can reveal patterns in love
-                </p>
-                <p class="news-info">
-                    Mathematical models developed over three decades of research suggest romantic relationships follow
-                    measurable patterns that could help identify when couples are approaching a higher risk of
-                    separation.
-                </p>
-            </div>
-
-            <div class="news-mid">
-                <img class="news-2-img" src="images/news2-1-trending.webp" alt="">
-                <p class="news-title news-title-smaller">
-                    Which Singapore university leads Southeast Asia in mathematics?
-                </p>
-                <p class="news-info news-info-smaller">
-                    The university is ranked 32nd worldwide for mathematics in the latest U.S. News Best Global
-                    Universities rankings, the highest position achieved by any Southeast Asian institution.
-                </p>
-
-                <img class="news-2-img" src="images/news2-2-trending.webp" alt="">
-                <p class="news-title news-title-smaller">
-                    Three Japanese restaurant staff jailed in Taiwan for serving expired wagyu
-                </p>
-                <p class="news-info news-info-smaller">
-                    Three Japanese nationals who operated a barbecue restaurant in Taichung, Taiwan, have been sentenced
-                    to prison for knowingly serving customers expired wagyu beef.
-                </p>
-            </div>
-
-            <div class="news-right">
-                <div class="right-most-top">
-                    <span class="right-most-read">
-                        Most Read
-                    </span>
-                    <span class="right-most-comment">
-                        Most Commented
-                    </span>
-                </div>
-                <div class="right-most-bot">
-                    <div class="right-most-qtt">
-                        1
-                    </div>
-                    <div class="right-most-text">
-                        World's second-richest country offers nearly $400 in credits for youth to pursue hobbies and
-                        life skills
-                    </div>
-                </div>
-                <div class="right-most-bot">
-                    <div class="right-most-qtt">
-                        2
-                    </div>
-                    <div class="right-most-text">
-                        World's second-richest country leads Southeast Asia with two universities in global AI top 10
-                    </div>
-                </div>
-                <div class="right-most-bot">
-                    <div class="right-most-qtt">
-                        3
-                    </div>
-                    <div class="right-most-text">
-                        From artist dream to global food brand: How George Quek built Singapore's BreadTalk Group
-                    </div>
-                </div>
-                <div class="right-most-bot">
-                    <div class="right-most-qtt">
-                        4
-                    </div>
-                    <div class="right-most-text">
-                        Which Singapore university leads Southeast Asia in mathematics?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
 
 
 
-    <div class="footer">
-        Back to top
-    </div>
 
-    <div class="footer footer-main">
-        <div class="footer-collumns">
+
+
+
+      <div class="footer">
+        <p class="back-to-top">Back to top</p>
+
+        <div class="footer-main">
+          <div class="footer-collumns">
             <p class="footer-title">
-                News
+              News
             </p>
             <p class="footer-index">
-                Politics <br>
-                Education <br>
-                Enviroment <br>
-                Traffic <br>
-                Crime <br>
-                Brainteaser <br>
+              Politics <br>
+              Education <br>
+              Enviroment <br>
+              Traffic <br>
+              Crime <br>
+              Brainteaser <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                Business
+              Business
             </p>
             <p class="footer-index">
-                DataSpeaks <br>
-                Property <br>
-                Billionaires <br>
-                Markets <br>
-                Companies <br>
-                Economy <br>
-                Money <br>
-                Quiz <br>
+              DataSpeaks <br>
+              Property <br>
+              Billionaires <br>
+              Markets <br>
+              Companies <br>
+              Economy <br>
+              Money <br>
+              Quiz <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                Tech
+              Tech
             </p>
             <p class="footer-index">
-                Tech news <br>
-                Enterprises <br>
-                Personalities <br>
+              Tech news <br>
+              Enterprises <br>
+              Personalities <br>
             <p class="footer-index footer-index-nearer">
-                Vietnam innovation
+              Vietnam innovation
             </p>
             <p class="footer-index footer-index-nearer">
-                Challenge hub
+              Challenge hub
             </p>
 
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                Travel
+              Travel
             </p>
             <p class="footer-index">
-                Places <br>
-                Food <br>
-                Guide <br>
-                Visa <br>
-                Puzzle <br>
+              Places <br>
+              Food <br>
+              Guide <br>
+              Visa <br>
+              Puzzle <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                Life
+              Life
             </p>
             <p class="footer-index">
-                Trend <br>
-                Arts <br>
-                Celebrities <br>
-                Vogue <br>
-                Love <br>
-                Wellness <br>
+              Trend <br>
+              Arts <br>
+              Celebrities <br>
+              Vogue <br>
+              Love <br>
+              Wellness <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                Sports
+              Sports
             </p>
             <p class="footer-index">
-                Football <br>
-                Boxing <br>
-                Marathon <br>
-                Tennis <br>
-                Golf <br>
-                Other sports <br>
-                Trivia <br>
+              Football <br>
+              Boxing <br>
+              Marathon <br>
+              Tennis <br>
+              Golf <br>
+              Other sports <br>
+              Trivia <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                World
+              World
             </p>
-        </div>
-        <div class="footer-collumns footer-collumns-custom">
+          </div>
+          <div class="footer-collumns footer-collumns-custom">
             <p class="footer-title">
-                Perspectives
+              Perspectives
             </p>
             <p class="footer-index">
-                Readers' Views <br>
+              Readers' Views <br>
             </p>
-        </div>
-        <div class="footer-collumns">
+          </div>
+          <div class="footer-collumns">
             <p class="footer-title">
-                VnE-GO
+              VnE-GO
             </p>
-        </div>
+          </div>
 
-        <div class="footer-contact">
+          <div class="footer-contact">
             <p class="footer-title">
-                Contact us
+              Contact us
             </p>
             <p class="footer-index">
-                Advertise with us:
+              Advertise with us:
             </p>
             <div class="footer-contact-info">
-                <img class="icon-phone-img" src="images/icon-phone.png" alt="">
-                <span>
-                    090 293 9644
-                </span>
+              <img class="icon-phone" src="images/icon-phone.png" alt="">
+              <span>
+                090 293 9644
+              </span>
             </div>
             <p class="footer-title">
-                RSS
+              RSS
             </p>
-        </div>
+          </div>
 
-        <div class="footer-download">
+          <div class="footer-download">
             <p class="footer-title footer-download-title">
-                Download App
+              Download App
             </p>
             <div class="footer-download-info">
-                <img class="icon-e-img" src="images/icon-e.png" alt="">
-                <span>
-                    International
-                </span>
+              <img class="icon-e" src="images/icon-e.png" alt="">
+              <span>
+                International
+              </span>
             </div>
 
             <div class="icon-group">
+              <div>
+                <img class="icon-apple" src="images/icon-apple.png" alt="">
                 <div>
-                    <img class="icon-apple-img" src="images/icon-apple.png" alt="">
-                    <div>
-                        <img class="icon-ggplay-img" src="images/icon-ggplay.png">
-                    </div>
+                  <img class="icon-ggplay" src="images/icon-ggplay.png">
                 </div>
+              </div>
 
-                <div>
-                    <img class="icon-qr-img" src="images/icon-qr.png" alt="">
-                </div>
+              <div>
+                <img class="icon-qr" src="images/icon-qr.png" alt="">
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="footer-info">
+          <div class="footer-info-collumns">
+            <p>
+              Subsidiary of VnExpress
+            </p>
+            <p>
+              License number: 71/GP-CBC, Ministry of Information and Communications, September 22, 2021
+            </p>
+          </div>
+          <div class="footer-info-collumns">
+            <p>
+              Editor-in-Chief: Pham Van Hieu
+            </p>
+            <p>
+              Email: evne@vnexpress.net &#8739 Tel: 028 7300 9999 - Ext 8556 10th floor, Block A FPT Tower, 10
+              Pham
+              Van Bach, Cau Giay Ward, Hanoi
+            </p>
+          </div>
+          <div class="footer-info-collumns">
+            <p>
+              © Copyright 1997-2026 VnExpress.net. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="footer-info">
-        <div class="footer-info-collumns">
-            <p>
-                Subsidiary of VnExpress
-            </p>
-            <p>
-                License number: 71/GP-CBC, Ministry of Information and Communications, September 22, 2021
-            </p>
-        </div>
-        <div class="footer-info-collumns">
-            <p>
-                Editor-in-Chief: Pham Van Hieu
-            </p>
-            <p>
-                Email: evne@vnexpress.net &#8739 Tel: 028 7300 9999 - Ext 8556 10th floor, Block A FPT Tower, 10 Pham
-                Van Bach, Cau Giay Ward, Hanoi
-            </p>
-        </div>
-        <div class="footer-info-collumns">
-            <p>
-                © Copyright 1997-2026 VnExpress.net. All rights reserved.
-            </p>
-        </div>
-    </div>
 
+    <div class="right-section"></div>
+
+  </div>
 
 </body>
 

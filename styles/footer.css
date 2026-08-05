@@ -2,17 +2,21 @@
     background-color: rgb(220, 219, 219);
     font-family: "Montserrat";
     font-size: 12px;
-    border: 1px;
+
 
     border-top-style: solid;
     border-color: rgb(177, 177, 177);
 
+
+    margin-top: 20px;
+}
+
+.back-to-top{
+    background-color: lightcyan;
+    border-top: 2px;
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
-
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .footer-main{

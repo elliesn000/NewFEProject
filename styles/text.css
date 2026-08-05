@@ -1,0 +1,68 @@
+/*----------header--------------------------- */
+.menu-header-text{
+    /* background-color: lightgoldenrodyellow; */
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.menu-header-text:hover{
+    color: rgb(51, 104, 219);
+}
+
+/* | */
+.between-text{
+    color:rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.15s;
+}
+
+
+/*---------------main-menu--------------------*/
+.main-menu-text{
+    /* background-color: aquamarine; */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin:0px;
+}
+
+.main-menu-text:hover{
+    background-color: rgba(84, 6, 6, 0.684); 
+}
+
+
+/*---------------trending-tab--------------------*/
+.trending-text{
+    /* background-color: aliceblue; */
+    color: rgba(0, 0, 0, 0.8);    
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 0px;
+    margin-left: 32px;
+}
+
+.trending-title-text{
+    color: rgb(128, 9, 9);
+    font-weight: normal;   
+
+    margin: 0px;
+}
+
+
+.degree-text{
+    color: green;
+    margin: 0px;
+}
+
+
+

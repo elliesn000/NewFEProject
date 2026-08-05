@@ -1,12 +1,18 @@
+.logo-img{
+    /* background-color: lightgrey;     */
+    width: 100%;  
+    cursor: pointer;    
+}
+
 .news-1-img{
     /* background-color: lightgoldenrodyellow; */
     object-fit: contain;
-    width: 620px;
+    width: 100%;
     cursor: pointer;
 }
 
 .news-2-img{
     object-fit: contain;
-    width: 300px;
+    width: 100%;
     cursor: pointer;
 }
