@@ -13,8 +13,7 @@
 .icon-header{
     width: 15px;
     cursor: pointer;
-    margin-left: 8px;
-    margin-right: 6px;
+    margin: 0 8px;
 }
 
 .icon-weather{
@@ -39,9 +38,9 @@
 }
 
 .icon-phone{
-    height: 13px;
+    height: 12px;
     opacity: 0.3;
-    margin-right: 5px;
+    
 }
 
 .icon-e{
@@ -51,23 +50,19 @@
 
 
 .icon-apple{
-    height: 24px;
-    border-color: rgba(0, 0, 0, 0.15);
-    border-style: solid;
+    width: 100%;
     border-radius: 4px;
-    border-width: 1px;
-    margin-bottom: -3px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .icon-ggplay{
-    height: 24px;
-    border-color: rgba(0, 0, 0, 0.15);
-    border-style: solid;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-width: 1px;
-
+    margin-top: -1px;
 }
 
 .icon-qr{
-    height: 54px;
+    width: 100%;
+    margin-left: 3px;
 }

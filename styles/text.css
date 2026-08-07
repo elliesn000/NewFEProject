@@ -1,7 +1,7 @@
 /*----------header--------------------------- */
 .menu-header-text{
-    /* background-color: lightgoldenrodyellow; */
     font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
     cursor: pointer;
 }
 .menu-header-text:hover{
@@ -11,25 +11,21 @@
 /* | */
 .between-text{
     color:rgba(0, 0, 0, 0.4);
-    margin-left: 10px;
-    margin-right: 10px;
     transition: color 0.15s;
+
+    margin: 0px 10px;
 }
 
 
 /*---------------main-menu--------------------*/
 .main-menu-text{
-    /* background-color: aquamarine; */
     color: white;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin:0px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .main-menu-text:hover{
@@ -39,23 +35,22 @@
 
 /*---------------trending-tab--------------------*/
 .trending-text{
-    /* background-color: aliceblue; */
     color: rgba(0, 0, 0, 0.8);    
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
+    white-space: nowrap;
     cursor: pointer;
    
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 0px;
-    margin-left: 32px;
+    padding: 0px;
+    margin: 8px 20px 8px 0;
+}
+.trending-text:hover{
+    color: black;
 }
 
 .trending-title-text{
     color: rgb(128, 9, 9);
-    font-weight: normal;   
-
-    margin: 0px;
+    font-weight: normal;
 }
 
 

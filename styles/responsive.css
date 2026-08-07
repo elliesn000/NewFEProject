@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+
+    .mid-header {
+        color: white;
+    }
+    .right-main-menu{
+        display: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-left {
+        grid-template-columns: repeat(5, minmax(auto, 1fr))
+    }
+
+    .footer-right {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer-contact {
+        grid-column: 2;
+    }
+
+    .icon-group {
+        grid-template-columns: 3fr 2fr 2fr;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+.trending-tab{background-color: lightgreen}
+
+}
