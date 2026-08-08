@@ -1,8 +1,9 @@
 /*----------header--------------------------- */
 .menu-header-text{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     white-space: nowrap;
     cursor: pointer;
+    transition: color 0.15s;
 }
 .menu-header-text:hover{
     color: rgb(51, 104, 219);
@@ -11,27 +12,19 @@
 /* | */
 .between-text{
     color:rgba(0, 0, 0, 0.4);
-    transition: color 0.15s;
-
-    margin: 0px 10px;
+    margin-left: 10px;
 }
-
 
 /*---------------main-menu--------------------*/
 .main-menu-text{
-    color: white;
-    font-size: 14px;
     font-weight: bold;
+    padding: 12px;
+    margin: 0;
     cursor: pointer;
-    
-    padding: 10px;
-    margin: 0px;
 }
-
 .main-menu-text:hover{
     background-color: rgba(84, 6, 6, 0.684); 
 }
-
 
 /*---------------trending-tab--------------------*/
 .trending-text{
@@ -42,7 +35,7 @@
     cursor: pointer;
    
     padding: 0px;
-    margin: 8px 20px 8px 0;
+    margin: 8px 0px 8px 20px;
 }
 .trending-text:hover{
     color: black;
@@ -51,6 +44,8 @@
 .trending-title-text{
     color: rgb(128, 9, 9);
     font-weight: normal;
+
+    margin-left: 0;
 }
 
 

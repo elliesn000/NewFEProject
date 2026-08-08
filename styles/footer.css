@@ -1,16 +1,15 @@
-/* 
-.footer-left{background-color: lightcyan}
+/* .footer-left{background-color: lightcyan}
 .footer-collumns{background-color: lightyellow}
 .footer-title{background-color: lightskyblue}
 .footer-index{background-color: lightpink} */
 
 .footer{
-    background-color: rgb(220, 219, 219);
+    background-color: rgba(0, 0, 0, 0.05);
     display: grid;
     grid-template-columns: minmax(0,10fr) minmax(0, 4fr);
-    border-top: 1px solid rgb(185, 184, 184) ;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
 
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .footer-left{
@@ -19,7 +18,7 @@
 }
 
 .footer-collumns{    
-    margin: 10px 8px 0 0;
+    margin: 0px 8px 0 0;
 }
 
 .footer-title{
@@ -28,7 +27,7 @@
     white-space: nowrap;
     cursor: pointer;
 
-    margin: 0 0 15px 0;
+    padding: 5px 0;
 }
 .footer-title:hover{
     color: lightskyblue
@@ -57,7 +56,6 @@
 .footer-right{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
 }
 
 .footer-contact{
@@ -67,6 +65,7 @@
 
 .footer-download{    
     margin-left: 25px;
+    margin-top: 20px;
 }
 
 .footer-download-e{

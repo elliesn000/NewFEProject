@@ -29,6 +29,7 @@
 
 
 <body>
+
   <div class="general">
 
     <div class="left-section"></div>
@@ -46,52 +47,47 @@
           The most read Vietnamese newspaper
         </div>
 
+
         <div class="right-header">
-          <div class="menu-header-text">
-            HCMC
+
+          <div class="right-header-columns">
+            <p class="menu-header-text">HCMC</p>
+          </div>
+
+          <div class="right-header-columns">
+            <img class="icon-weather" src="images/icon-weather.svg">
+            <p>30&#176</p>
             <span class="between-text">&#8739</span>
           </div>
-          <div>
-            <img class="icon-header icon-weather" src="images/icon-weather.svg">
-          </div>
-          <div class="menu-header-text">
-            30&#176
+          <div class="right-header-columns">
+            <p class="menu-header-text">Vietnamese Edition</p>
             <span class="between-text">&#8739</span>
           </div>
-          <div class="menu-header-text">
-            Vietnamese Edition
+          <div class="right-header-columns">
+            <p class="menu-header-text">Follow us on</p>
             <span class="between-text">&#8739</span>
           </div>
-          <div class="menu-header-text">
-            Contact us
-            <span class="between-text">&#8739</span>
-          </div>
-          <div class="menu-header-text">
-            Follow us on
-          </div>
-          <div>
+          <div class="right-header-columns">
             <img class="icon-header" src="images/icon-fb.svg">
           </div>
-          <div>
-            <img class="icon-header" src="images/icon-x.svg">            
+          <div class="right-header-columns">
+            <img class="icon-header" src="images/icon-x.svg">
+            <span class="between-text">&#8739</span>
           </div>
-          <div>
+          <div class="right-header-columns">
             <input class="search-bar" type="text" placeholder="Search">
             <img class="icon-header" src="images/icon-search.svg">
           </div>
-          <div class="icon-header">
+          <div>
             <img class="icon-person" src="images/icon-person.svg">
           </div>
-          <div class="menu-header-text">
-            Log In
-          </div>          
+          <div class="right-header-columns">
+            <p class="menu-header-text">Log In</p>
+          </div>
 
-        </div>
+        </div> <!-- end right-header -->
 
       </div>
-
-
-
 
 
 
@@ -99,10 +95,13 @@
       <div class="main-menu">
 
         <div class="left-main-menu">
-          <img class="icon-home" src="images/icon-home.png" alt="">
 
-          <div onmousemove="subMenu()" onmouseout="exitMenu()" class="main-menu-text">
-            <div>News</div>
+
+          <img class="icon-home" src="images/icon-home.png">
+
+
+          <div onmousemove="subMenu()" onmouseout="exitMenu()">
+            <p class="main-menu-text">News</p>
             <div id="subMenuPopup" class="sub-menu">
               <p class="text-sub-menu">Politics</p>
               <p class="text-sub-menu">Education</p>
@@ -113,34 +112,35 @@
             </div>
           </div>
 
-          <p class="main-menu-text">
-            Business
-          </p>
-          <p class="main-menu-text">
-            Tech
-          </p>
-          <p class="main-menu-text">
-            Travel
-          </p>
-          <p class="main-menu-text">
-            Life
-          </p>
-          <p class="main-menu-text">
-            Sports
-          </p>
-          <p class="main-menu-text">
-            World
-          </p>
-          <p class="main-menu-text">
-            Perspectives
-          </p>
-          <p class="main-menu-text">
-            VnE-GO
-          </p>
-        </div>
+          <div>
+            <p class="main-menu-text">Business</p>
+          </div>
+          <div>
+            <p class="main-menu-text">Tech</p>
+          </div>
+          <div>
+            <p class="main-menu-text">Travel</p>
+          </div>
+          <div>
+            <p class="main-menu-text">Life</p>
+          </div>
+          <div>
+            <p class="main-menu-text">Sports</p>
+          </div>
+          <div>
+            <p class="main-menu-text">World</p>
+          </div>
+          <div>
+            <p class="main-menu-text">Perspectives</p>
+          </div>
+          <div>
+            <p class="main-menu-text">VnE-GO</p>
+          </div>
+        </div> <!-- end left main menu -->
+
 
         <div class="right-main-menu">
-          <p class="main-menu-text">
+          <p>
             &#8801 All sections
           </p>
         </div>
@@ -161,7 +161,7 @@
           <p class="trending-text">Long Thanh airport</p>
         </div>
 
-        <div>
+        <div class="trending-tab-right">
           <p class="trending-text">
             HCMC air quality
             <span class="degree-text">28 Good &#10132</span>
@@ -176,50 +176,60 @@
 
 
       <div class="news">
-        <div class="news-left">
-          <img class="news-1-img" src="images/news1-trending.webp">
-          <p class="news-title">
-            Dozens feared trapped in quake-hit Japan mall
-          </p>
-          <p class="news-info">
-            Dozens of people were feared trapped in a shopping mall in Japan on Tuesday after a major
-            earthquake
-            toppled buildings, sparked fires and reportedly killed one person and injured more than 100.
-          </p>
-          <p class="news-1-line">
-            _____________________________________________________________________
-          </p>
 
-          <p class="news-title">
-            Scientists say math can reveal patterns in love
-          </p>
-          <p class="news-info">
-            Mathematical models developed over three decades of research suggest romantic relationships
-            follow
-            measurable patterns that could help identify when couples are approaching a higher risk of
-            separation.
-          </p>
+        <div class="news-left">
+
+          <div class="news-left-top">
+            <img class="news-1-img" src="images/news1-trending.webp">
+            <p class="news-title">
+              Dozens feared trapped in quake-hit Japan mall
+            </p>
+            <p class="news-info">
+              Dozens of people were feared trapped in a shopping mall in Japan on Tuesday after a major
+              earthquake
+              toppled buildings, sparked fires and reportedly killed one person and injured more than 100.
+            </p>
+          </div>
+
+          <div class="news-left-bot">
+            <p class="news-title">
+              Scientists say math can reveal patterns in love
+            </p>
+            <p class="news-info">
+              Mathematical models developed over three decades of research suggest romantic relationships
+              follow
+              measurable patterns that could help identify when couples are approaching a higher risk of
+              separation.
+            </p>
+          </div>
+
         </div>
 
         <div class="news-mid">
-          <img class="news-2-img" src="images/news2-1-trending.webp" alt="">
-          <p class="news-title news-title-smaller">
-            Which Singapore university leads Southeast Asia in mathematics?
-          </p>
-          <p class="news-info news-info-smaller">
-            The university is ranked 32nd worldwide for mathematics in the latest U.S. News Best Global
-            Universities rankings, the highest position achieved by any Southeast Asian institution.
-          </p>
 
-          <img class="news-2-img" src="images/news2-2-trending.webp" alt="">
-          <p class="news-title news-title-smaller">
-            Three Japanese restaurant staff jailed in Taiwan for serving expired wagyu
-          </p>
-          <p class="news-info news-info-smaller">
-            Three Japanese nationals who operated a barbecue restaurant in Taichung, Taiwan, have been
-            sentenced
-            to prison for knowingly serving customers expired wagyu beef.
-          </p>
+          <div class="news-mid-top">
+            <img class="news-2-img" src="images/news2-1-trending.webp" alt="">
+            <p class="news-title news-title-smaller">
+              Which Singapore university leads Southeast Asia in mathematics?
+            </p>
+            <p class="news-info news-info-smaller">
+              The university is ranked 32nd worldwide for mathematics in the latest U.S. News Best Global
+              Universities rankings, the highest position achieved by any Southeast Asian institution.
+            </p>
+          </div>
+
+          <div class="news-mid-bot">
+            <img class="news-2-img" src="images/news2-2-trending.webp" alt="">
+            <p class="news-title news-title-smaller">
+              Three Japanese restaurant staff jailed in Taiwan for serving expired wagyu
+            </p>
+            <p class="news-info news-info-smaller">
+              Three Japanese nationals who operated a barbecue restaurant in Taichung, Taiwan, have been
+              sentenced
+              to prison for knowingly serving customers expired wagyu beef.
+            </p>
+          </div>
+
         </div>
 
         <div class="news-right">
@@ -270,6 +280,48 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+      <div class="world-tab">
+        <div class="world-left">
+          World
+
+        </div>
+
+        <div class="world-right">
+
+        </div>
+      </div>
+      
+
+      <div class="world">
+        <div class="world-columns">
+          <img class="news-1-img" src="images/word1.webp">
+          <p class="world-title">
+            China draws up safety rules for autonomous vehicles
+          </p>
+        </div>
+        <div class="world-columns">
+          <img class="news-1-img" src="images/word2.webp">
+          <p class="world-title">
+            2 members of British band Massive Attack banned from Singapore after Palestinian flag at concert
+        </div>
+        <div class="world-columns">
+          <img class="news-1-img" src="images/word3.webp">
+          <p class="world-title">
+            US government bans humanoid robots manufactured abroad
+          </p>
+
+        </div>
+        <div class="world-columns">
+          <img class="news-1-img" src="images/word4.webp">
+          <p class="world-title">
+            French DJ Kavinsky, famed for 'Nightcall', found dead in Paris
+        </div>
+      </div> <!-- end-world -->
 
 
 
@@ -413,7 +465,9 @@
         <div class="footer-info-collumns">
           <p>
             Editor-in-Chief: Pham Van Hieu <br>
-            Email: evne@vnexpress.net &#8739 Tel: 028 7300 9999 - Ext 8556 10th floor, Block A FPT Tower, 10
+            Email: evne@vnexpress.net<br>
+            Tel: 028 7300 9999 - Ext 8556 <br>
+            10th floor, Block A FPT Tower, 10
             Pham
             Van Bach, Cau Giay Ward, Hanoi
           </p>
@@ -425,14 +479,10 @@
 
         </div>
       </div>
+    </div> <!-- end-mid-section -->
+  
 
-
-
-
-    </div>
-
-
-    <div class="right-section"></div>
+  <div class="right-section"></div>
 
   </div>
 

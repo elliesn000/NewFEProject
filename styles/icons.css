@@ -13,29 +13,30 @@
 .icon-header{
     width: 15px;
     cursor: pointer;
-    margin: 0 8px;
 }
-
 .icon-weather{
-    width:30px;
+    width: 25px;
     cursor: pointer;
 }
+
 .icon-person{
     opacity: 0.5;
-    width: 30px;
+    width: 26px;
+    cursor: pointer;
 }
 
 
 .icon-home{    
     background-color: rgba(84, 6, 6, 0.684); 
-    height: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 0px;
+    width: 20px;
+    padding: 10px;
     cursor: pointer;
+
+    margin: 0px;
 }
+
+
+
 
 .icon-phone{
     height: 12px;
