@@ -4,13 +4,9 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  template: `
-    <h1 class="text-2xl p-6">Welcome to {{ title() }}</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  templateUrl: './app.html',
+  styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('ng-news');
+  protected readonly title = signal('news-Angular');
 }
