@@ -1,0 +1,27 @@
+<div class="my-2 header-c">
+  <mat-toolbar>
+
+    <img class="w-1/8" src="logo.svg">
+    <span class="ml-4 flex-auto">{{titles}}</span>
+
+    <app-weather />
+
+    <mat-divider class="h-4 !border-r-2 !mx-2" [vertical]="true"></mat-divider>
+
+    <a href="#" class="hover:text-blue-600">Vietnamese Edition</a>
+    <mat-divider class="h-4 !border-r-2 !mx-2" [vertical]="true"></mat-divider>
+    <a href="#" class="hover:text-blue-600">Contact us</a>
+    <mat-divider class="h-4 !border-r-2 !mx-2" [vertical]="true"></mat-divider>
+    <span>Follow us on</span>
+
+    <a href="#"><i class="mx-2 fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <mat-divider class="h-4 !border-r-2 !mx-2" [vertical]="true"></mat-divider>
+
+    <!-- need 1c -->
+    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+    <app-login />
+
+  </mat-toolbar>
+</div>

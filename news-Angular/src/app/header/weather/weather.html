@@ -1,0 +1,11 @@
+<button class="flex flex-row items-center" [matMenuTriggerFor]="menu">
+  <span class="order-1">HCMC</span>
+  <mat-icon class="order-2">expand_more</mat-icon>
+  <img class="order-3 w-10" src="icon-weather.svg">
+</button>
+
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>

@@ -1,0 +1,10 @@
+.header-c{
+    &, & *{
+        font-size: 15px !important;
+        background-color: lightblue;
+    }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
