@@ -1,0 +1,24 @@
+<!-- loop item in articles  -->
+<!--  <app-news-db article="item"></app-news-db> -->
+
+
+<div>
+    <mat-grid-list rowHeight="200px" cols="4">
+
+        @for (item of newsdata.news; track newsdata.imagePath) {            
+        
+            <mat-grid-tile class="bg-blue-200" colspan="2" rowspan="3">
+            <app-news-db [articleInput]="item" [sizeInput]="normalSize"></app-news-db>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="bg-red-200" colspan="1" rowspan="2">2</mat-grid-tile>
+        <app-news-db></app-news-db>
+        <mat-grid-tile class="bg-yellow-200" colspan="1" rowspan="2">3</mat-grid-tile>
+
+        <mat-grid-tile class="bg-green-200" colspan="1" rowspan="2">2b</mat-grid-tile>
+
+        <mat-grid-tile class="bg-purple-200" colspan="2" rowspan="1">1b</mat-grid-tile>
+    }
+
+    </mat-grid-list>    
+</div>
