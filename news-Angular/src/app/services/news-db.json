@@ -1,0 +1,30 @@
+{
+    "articles": [
+        {
+            "id": 1,            
+            "title": "Singapore's top university destroys tumors with magnetic pulses, no chemo needed",
+            "content": "Researchers at the National University of Singapore have used brief pulses of a weak magnetic field to eliminate breast tumors in 75% of the mice they tested, without any chemotherapy.",
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/14/nuspodcastseriesshorthandpodca-5835-6129-1789376728.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=l_eDZDpLymApvJoPypUD2Q"
+        },
+        {
+            "id": 2,
+            "title": "Chinese nationals face 40 years over kidnapping of Singaporean at Malaysia airport",
+            "content": "They face one count under Section 3(1) of the Kidnapping Act 1961, read with Section 34 of the Penal Code, which covers acts carried out with common intention. Conviction carries 30 to 40 years in prison and caning.",
+            "imagePath": "https://i1-vnexpress.vnecdn.net/2026/09/07/tong-the2-1788752756.jpg?w=1200&h=0&q=100&dpr=2&fit=crop&s=d5bPs61Kp0WcyxbiFW7tHQ"
+        },
+        {
+            "id": 3,
+            "title": "Humans must become wiser to coexist with AI 'species'",
+            "content": "Last June, I taught a class on AI at a summer camp for 60 students aged 12 to 20.",
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/16/pexels-pavel-danilyuk-17878135-7674-7700-1789529035.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jhBmyD0B_ZcJ61UuKpiayw"
+        },
+        {
+            "id": 4,
+            "title": "Tech workers spiral into anxiety, exhaustion because of 'age 35 curse'",
+            "content": "Shutting his laptop at 3:00 a.m. with vision blurred after a grueling 16-hour shift, 27-year-old The Vinh found sleep impossible, his limbs trembling with fatigue.",
+            "imagePath": "https://i1-suckhoe.vnecdn.net/2026/09/09/screenshot-at-1788966385-7436-1788966555.png?w=680&h=408&q=100&dpr=2&fit=crop&s=aivsFD9W1CfcSAfH4kFLow"
+
+        }
+    ]
+}
+

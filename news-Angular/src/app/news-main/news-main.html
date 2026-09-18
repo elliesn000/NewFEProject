@@ -1,24 +1,38 @@
-<!-- loop item in articles  -->
-<!--  <app-news-db article="item"></app-news-db> -->
-
-
-<div>
-    <mat-grid-list rowHeight="200px" cols="4">
-
-        @for (item of newsdata.news; track newsdata.imagePath) {            
-        
-            <mat-grid-tile class="bg-blue-200" colspan="2" rowspan="3">
-            <app-news-db [articleInput]="item" [sizeInput]="normalSize"></app-news-db>
-        </mat-grid-tile>
-
-        <mat-grid-tile class="bg-red-200" colspan="1" rowspan="2">2</mat-grid-tile>
-        <app-news-db></app-news-db>
-        <mat-grid-tile class="bg-yellow-200" colspan="1" rowspan="2">3</mat-grid-tile>
-
-        <mat-grid-tile class="bg-green-200" colspan="1" rowspan="2">2b</mat-grid-tile>
-
-        <mat-grid-tile class="bg-purple-200" colspan="2" rowspan="1">1b</mat-grid-tile>
-    }
-
-    </mat-grid-list>    
+<div class="grid grid-cols-4 gap-5">
+    <div id="1a" class="col-span-2 bg-blue-200">
+               <app-news-card [newsInput]="highlightArticles[0]" [displayInput]="normalDisplay"></app-news-card>
+               <app-news-card [newsInput]="highlightArticles[1]" [displayInput]="noimgDisplay"></app-news-card>
+    </div>
+    <div id="2a" class="bg-green-200 ">
+                <app-news-card [newsInput]="normalArticles[0]" [displayInput]="normalDisplay"></app-news-card>
+                <app-news-card [newsInput]="normalArticles[1]" [displayInput]="normalDisplay"></app-news-card>
+    </div>
+    <div id="" class="bg-purple-200">3</div>
 </div>
+
+
+
+
+<!-- <mat-grid-list rowHeight="180px" cols="4" gutterSize="20px">
+    
+    <mat-grid-tile id="1a" class="bg-blue-200" colspan="2" rowspan="3">
+        <app-news-card [newsInput]="highlightArticles[0]" [displayInput]="normalDisplay"></app-news-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile id="2a" class="bg-red-200" colspan="1" rowspan="2">
+        <app-news-card [newsInput]="normalArticles[0]" [displayInput]="normalDisplay"></app-news-card>
+    </mat-grid-tile>
+    
+    <mat-grid-tile id="3" class="bg-yellow-200" colspan="1" rowspan="2">
+        3
+    </mat-grid-tile>
+
+    <mat-grid-tile id="2b" class="bg-green-200" colspan="1" rowspan="2">
+        <app-news-card [newsInput]="normalArticles[1]" [displayInput]="normalDisplay"></app-news-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile id="1b" class="bg-purple-200" colspan="2" rowspan="1">
+        <app-news-card [newsInput]="highlightArticles[1]" [displayInput]="noimgDisplay"></app-news-card>
+    </mat-grid-tile>
+    
+</mat-grid-list> -->
