@@ -2,3 +2,31 @@
 //   align-items: flex-start;
 //   justify-content: center;
 // }
+
+.right-most-top {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: 2px solid rgb(232, 232, 232);
+}
+
+.right-most-read {
+    /* background-color: lightslategray; */
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+
+    margin-left: 30px;
+}
+
+.right-most-comment {
+    /* background-color: lightskyblue; */
+    cursor: pointer;
+
+    margin-left: 30px;
+}
+.right-most-comment:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}

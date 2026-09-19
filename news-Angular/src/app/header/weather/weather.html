@@ -1,8 +1,9 @@
-<button class="flex flex-row items-center" [matMenuTriggerFor]="menu">
-  <span class="order-1">HCMC</span>
-  <mat-icon class="order-2">expand_more</mat-icon>
-  <img class="order-3 w-10" src="icon-weather.svg">
-</button>
+<div class="flex items-center" [matMenuTriggerFor]="menu">
+  <span class="">HCMC</span>
+  <mat-icon class="">expand_more</mat-icon>
+  <img class="w-8" src="icon-weather.svg">
+  <span>{{ temper }}&#186; </span>
+</div>
 
 
 <mat-menu #menu="matMenu">

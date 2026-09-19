@@ -11,10 +11,7 @@ import {display} from '../shared/constants';
 export class NewsCard {
   newsInput = input<any>();
   displayInput = input<display>(display.normal);
-  displayDefine = display;
-
-
-  
+  displayDefine = display;  
 }
 
 

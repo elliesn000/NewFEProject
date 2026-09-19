@@ -9,4 +9,6 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './weather.scss',
   templateUrl: './weather.html',
 })
-export class Weather {}
+export class Weather {
+  protected temper: string = '28'
+}
