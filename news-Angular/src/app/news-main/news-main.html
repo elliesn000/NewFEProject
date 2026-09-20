@@ -1,15 +1,25 @@
-<div class="grid grid-cols-4 gap-5">
-    <div id="1a" class="col-span-2">
+<div class="md:grid grid-cols-2 lg:grid-cols-[minmax(340px,_1fr)_340px_minmax(200px,300px)] gap-5">
+    <div id="1a" class="mt-5 md:m-0">
         <app-news-card [newsInput]="highlightArticles[0]" [displayInput]="normalDisplay"></app-news-card>
 
-        <app-news-card [newsInput]="highlightArticles[1]" [displayInput]="noimgDisplay"></app-news-card>
+        <app-news-card class="hidden md:block" [newsInput]="highlightArticles[1]" [displayInput]="noimgDisplay"></app-news-card>
     </div>
-    <!-- loop -->
-    <div id="2a" class="bg-green-200 "> 
-        <app-news-card [newsInput]="normalArticles[0]" [displayInput]="normalDisplay"></app-news-card>
-        <app-news-card [newsInput]="normalArticles[1]" [displayInput]="normalDisplay"></app-news-card>
+ 
+    
+    <div id="lopp-in-md" class="block md:hidden">
+        @for (item of mdArticles; track item.id){
+            <app-news-card [newsInput]="item" [displayInput]="landscapeDisplay"></app-news-card>
+        }
     </div>
-    <div id="3" class="">
+
+    <div id="2a" class="hidden md:block">
+        @for (item of normalArticles; track item.id){
+            <app-news-card [newsInput]="item" [displayInput]="normalDisplay"></app-news-card>
+        }
+    </div>
+
+
+    <div id="3" class="hidden lg:block">
         <div class="right-most-top">
             <span class="right-most-read">
                 Most Read

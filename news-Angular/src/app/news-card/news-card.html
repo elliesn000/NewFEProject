@@ -2,11 +2,11 @@
 @if(displayInput() === displayDefine.normal){
 <mat-card class="card-news">
     <img class="card-img" mat-card-image [src]="newsInput()?.imagePath">
-    <mat-card-title class="card-title">
+    <mat-card-title class="!m-2 card-title">
         <a href="#">{{ newsInput()?.title }}</a>
     </mat-card-title>
-    <mat-card-content class="card-content">
-        <a href="#" >{{ newsInput()?.content }}</a>
+    <mat-card-content class="!mx-2 card-content">
+        <a href="#">{{ newsInput()?.content }}</a>
     </mat-card-content>
 </mat-card>
 }
@@ -14,13 +14,14 @@
 
 @if(displayInput() === displayDefine.landscape){
 <mat-card class="card-news">
-    <img mat-card-image [src]="newsInput()?.imagePath">
-    <mat-card-title>
-        <p>{{ newsInput()?.title}}</p>
-    </mat-card-title>
-    <mat-card-content>
-        <p>{{ newsInput()?.content }}</p>
-    </mat-card-content>
+
+    <mat-card-header>
+        <img mat-card-sm-image [src]="newsInput()?.imagePath">
+        <mat-card-title-group>
+            <mat-card-subtitle class="!ml-2">{{ newsInput()?.title }}</mat-card-subtitle>
+        </mat-card-title-group>
+    </mat-card-header>
+
 </mat-card>
 }
 

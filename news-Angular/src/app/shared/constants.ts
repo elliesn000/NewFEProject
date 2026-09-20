@@ -4,3 +4,11 @@ export enum display {
   noimg = "noimg",
 }
 
+export class article {
+     id = "id";
+  title = "title";
+  content = "content";
+  imagePath = "imagePath";
+}
+
+ 

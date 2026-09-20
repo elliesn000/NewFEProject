@@ -1,9 +1,9 @@
 import { Component, input } from '@angular/core';
-import { MatCard, MatCardImage, MatCardTitle, MatCardContent } from '@angular/material/card';
+import { MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule } from '@angular/material/card';
 import {display} from '../shared/constants';
 
 @Component({
-  imports: [MatCard, MatCardImage, MatCardTitle, MatCardContent],
+  imports: [MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule],
   selector: 'app-news-card',
   styleUrl: './news-card.scss',
   templateUrl: './news-card.html',

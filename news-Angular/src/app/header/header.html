@@ -1,11 +1,11 @@
 <div class="xl:mt-2 header-c">
-  <mat-toolbar class="flex">
+  <mat-toolbar class="flex gap-2">
 
     <img class="w-[200px]" src="logo.svg">
     <span class="mx-5 flex-1 min-w-0 invisible xl:visible grow">{{ titles }}</span>
 
 
-    <div class="flex gap-3 items-center">
+    <div class="hidden lg:flex gap-3 items-center">
       <app-weather />
 
       <mat-divider class="h-4 !border-r-2" [vertical]="true"></mat-divider>
@@ -23,8 +23,9 @@
       <!-- need 1c -->
       <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 
-      <app-login />
+      
     </div>
+    <app-login></app-login>
 
 
 
