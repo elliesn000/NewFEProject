@@ -1,167 +1,154 @@
 {
     "articles": [
         {
-            "id": 1,            
             "title": "Singapore's top university destroys tumors with magnetic pulses, no chemo needed",
             "content": "Researchers at the National University of Singapore have used brief pulses of a weak magnetic field to eliminate breast tumors in 75% of the mice they tested, without any chemotherapy.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/14/nuspodcastseriesshorthandpodca-5835-6129-1789376728.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=l_eDZDpLymApvJoPypUD2Q"
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/14/nuspodcastseriesshorthandpodca-5835-6129-1789376728.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=l_eDZDpLymApvJoPypUD2Q",
+            "status": "publish"
         },
         {
-            "id": 2,
             "title": "Chinese nationals face 40 years over kidnapping of Singaporean at Malaysia airport",
             "content": "They face one count under Section 3(1) of the Kidnapping Act 1961, read with Section 34 of the Penal Code, which covers acts carried out with common intention. Conviction carries 30 to 40 years in prison and caning.",
-            "imagePath": "https://i1-vnexpress.vnecdn.net/2026/09/07/tong-the2-1788752756.jpg?w=1200&h=0&q=100&dpr=2&fit=crop&s=d5bPs61Kp0WcyxbiFW7tHQ"
+            "imagePath": "https://i1-vnexpress.vnecdn.net/2026/09/07/tong-the2-1788752756.jpg?w=1200&h=0&q=100&dpr=2&fit=crop&s=d5bPs61Kp0WcyxbiFW7tHQ",
+            "status": "publish"
         },
         {
-            "id": 3,
             "title": "Humans must become wiser to coexist with AI 'species'",
             "content": "Last June, I taught a class on AI at a summer camp for 60 students aged 12 to 20.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/16/pexels-pavel-danilyuk-17878135-7674-7700-1789529035.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jhBmyD0B_ZcJ61UuKpiayw"
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/16/pexels-pavel-danilyuk-17878135-7674-7700-1789529035.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=jhBmyD0B_ZcJ61UuKpiayw",
+            "status": "publish"
         },
         {
-            "id": 4,
             "title": "Tech workers spiral into anxiety, exhaustion because of 'age 35 curse'",
             "content": "Shutting his laptop at 3:00 a.m. with vision blurred after a grueling 16-hour shift, 27-year-old The Vinh found sleep impossible, his limbs trembling with fatigue.",
-            "imagePath": "https://i1-suckhoe.vnecdn.net/2026/09/09/screenshot-at-1788966385-7436-1788966555.png?w=680&h=408&q=100&dpr=2&fit=crop&s=aivsFD9W1CfcSAfH4kFLow"
+            "imagePath": "https://i1-suckhoe.vnecdn.net/2026/09/09/screenshot-at-1788966385-7436-1788966555.png?w=680&h=408&q=100&dpr=2&fit=crop&s=aivsFD9W1CfcSAfH4kFLow",
+            "status": "publish"
         },
         {
-            "id": 5,
             "title": "US colleges are so short of students they're admitting people who never applied",
             "content": "Hundreds of U.S. colleges are admitting high school students who never applied, as the number of American 18-year-olds begins a long decline.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/10/j4z7i2vqrbkqlb5y7dvg5b6oii-178-4446-5690-1788975355.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=ocTqM9IxmfxX_shGc3JnEg"
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/10/j4z7i2vqrbkqlb5y7dvg5b6oii-178-4446-5690-1788975355.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=ocTqM9IxmfxX_shGc3JnEg",
+            "status": "publish"
         },
         {
-            "id": 6,
             "title": "Passengers wait for 6 hours to collect baggage at Thailand's largest airport amid heavy flooding",
             "content": "Passengers arriving at Bangkok's Suvarnabhumi Airport had to wait up to six hours for their bags, while luggage from several flights was left behind amid disruptions to Thai Airways's ground operations.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/825292594159409142943016070145-2769-3308-1790561758.png?w=680&h=408&q=100&dpr=2&fit=crop&s=lf2cLWRpk8Lsyat9X3Jryw"
+            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/825292594159409142943016070145-2769-3308-1790561758.png?w=680&h=408&q=100&dpr=2&fit=crop&s=lf2cLWRpk8Lsyat9X3Jryw",
+            "status": "publish"
         },
         {
-            "id": 7,
-            "title": "Plane with 296 people on board forced to land in Portugal as smoke appears in cabin",
-            "content": "A Boston-bound Delta Air Lines jet made an emergency landing in Porto, Portugal, on Sept. 27 after smoke appeared in the passenger cabin, sending four passengers to a hospital.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/3-1790558432-8418-1790558509.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=1a2b3c4d5e"
+            "title": "Rush-hour downpour freezes HCMC traffic",
+            "content": "Heavy rain during Wednesday afternoon's rush hour caused severe traffic congestion around Tan Son Nhat Airport, while floodwaters quickly rose across many parts of Ho Chi Minh City.",
+            "imagePath": "https://vcdn1-vnexpress.vnecdn.net/2026/09/30/1790767678047-7727198889104875001-g4810444841907702279-79b34584a89045b23046789ef7597674-1790768132.jpg?dpr=1&fit=crop&h=0&q=100&s=tG7l7KufdLASP3y8TmaU7g&w=1200",
+            "status": "publish"
         },
         {
-            "id": 8,
-            "title": "Bangkok shoppers empty store shelves as flood paralyzes city",
-            "content": "Heavy rain and flooding across Bangkok have led residents to stock up on food and essentials in the weekend, emptying shelves at some convenience stores amid concerns about travel disruptions and possible shortages.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/bangkok-flood-shelves-1790563456.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=2b3c4d5e6f"
+            "title": "Lost shark becomes viral star in South Korea, boosts sales and named ambassador",
+            "content": "A wayward shark has unexpectedly become a celebrity in South Korea, attracting large crowds, praise from a local mayor and even affecting the stock market.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/4137708-1790759107-6431-1790759118.jpg?dpr=1&fit=crop&h=0&q=100&s=hLGYQ3P6aDpQDl0MVOia1A&w=680",
+            "status": "publish"
         },
         {
-            "id": 9,
-            "title": "Gold prices drop to 6-week low",
-            "content": "Vietnam's gold prices fell to the lowest in nearly 6 weeks on Monday amid an over 2% slump in global bullion rates.",
-            "imagePath": "https://i1-business.vnecdn.net/2026/09/28/gold-bars-1790560123.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=3c4d5e6f7g"
+            "title": "Passengers taking international flights from Long Thanh airport to pay $25 service fee",
+            "content": "Passengers departing on international flights from Long Thanh Airport will pay a US$25 service fee from October 1, matching the fee at Hanoi's Noi Bai Airport and exceeding Tan Son Nhat's fee by $5.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/pexels-delfinotamara-23369549-1856-4040-1790746795.jpg?dpr=1&fit=crop&h=0&q=100&s=Kt8EiXrh8DFeEL71TJiH2A&w=680",
+            "status": "publish"
         },
         {
-            "id": 10,
-            "title": "Trump's granddaughter welcomes Xi in Mandarin, 9 years after singing a Chinese folk song for him",
-            "content": "Arabella Kushner, U.S. President Donald Trump's 15-year-old granddaughter, greeted Chinese President Xi Jinping in Mandarin at the White House last week, nine years after she first sang for the Chinese leader.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/arabella-xi-1790552341.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=4d5e6f7g8h"
+            "title": "World's largest bullet-train network grows by 1,142 km ahead of National Day rush",
+            "content": "China opened four high-speed railway lines totaling 1,142 kilometers on September 28, expanding the world's largest bullet-train network before the National Day holiday rush.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/29/ulrich-mareli-aspeling-jeburr8-7683-2655-1790700001.jpg?dpr=1&fit=crop&h=0&q=100&s=wOYGystaPIDKxY9V1rL30g&w=680",
+            "status": "publish"
         },
         {
-            "id": 11,
-            "title": "Jet ski rider charged for drifting through floodwaters on Bangkok main street",
-            "content": "A man who rode a jet ski through submerged Bangkok, making waves along Phetchaburi Road, a major artery in the Thai capital, was arrested and charged with 'causing a public nuisance.'",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/jetski-bangkok-1790559812.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=5e6f7g8h9i"
+            "title": "Heavy rain, flooding snarl Ho Chi Minh City traffic during morning rush hour",
+            "content": "Heavy rain and flooding caused major traffic congestion on multiple routes into downtown Ho Chi Minh City during Wednesday morning's rush hour.",
+            "imagePath": "https://vcdn1-vnexpress.vnecdn.net/2026/09/30/wm1-2aobor29p2qcc2dzmuckmjg50oubdjhezamujgp654-1790731789-1790731882.jpg?dpr=1&fit=crop&h=0&q=100&s=Wwg7y1v4l4nVR-xlZ1fffg&w=1200",
+            "status": "publish"
         },
         {
-            "id": 12,
-            "title": "Wife of Malaysia's longest-serving PM Mahathir dies aged 100",
-            "content": "Siti Hasmah Mohamad Ali, the wife of Malaysia's longest-serving Prime Minister Mahathir Mohamad and a public health advocate, died Monday at the age of 100, the veteran leader's office said.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/siti-hasmah-1790554321.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=6f7g8h9i0j"
+            "title": "Australian woman dies after cosmetic surgery at HCMC international hospital",
+            "content": "A 65-year-old Australian woman died after undergoing cosmetic surgery at City International Hospital in Ho Chi Minh City's An Lac Ward, according to the municipal Department of Health.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/wm1-233a4137-2-1790678507-7754-1968-2219-1790729378.jpg?dpr=1&fit=crop&h=0&q=100&s=fFzaFTkn6W1wdUkjSrQf4Q&w=680",
+            "status": "publish"
         },
         {
-            "id": 13,
-            "title": "Vietnamese overseas workers getting younger",
-            "content": "Vietnamese guest workers going abroad have a median age of 27, one lower than in 2021 and much lower than the 40-42 for people working in Vietnam.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/overseas-workers-1790551122.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=7g8h9i0j1k"
+            "title": "World's second richest country to give one million households utility rebates in October",
+            "content": "Singapore will provide more than one million eligible households living in public flats with utility rebates worth S$110-190 in October to help ease living costs.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/2021t000000z-mt1nurpho0002z854-7420-8861-1790761003.webp?dpr=1&fit=crop&h=0&q=100&s=lkdLBP2IrQZ6iazPvzuL7A&w=680",
+            "status": "publish"
         },
         {
-            "id": 14,
-            "title": "Ho Chi Minh City warns of severe flooding as high tides peak at 1.85 m",
-            "content": "Ho Chi Minh City is forecast to experience high tides of 1.6 to 1.85 meters from Sept. 28 to 30, exceeding a Level 3 alert, the highest and most critical warning in Vietnam's river flood warning system.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/hcmc-tide-1790556789.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=8h9i0j1k2l"
+            "title": "Casino billionaire sells home for $8.9M in world's most expensive residential market",
+            "content": "Casino billionaire Angela Leong On-kei sold her luxury detached house in Hong Kong for HKD70 million, or about US$8.9 million.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/ChatGPT-Image-Sep-30-2026-04-0-6507-3993-1790759408.png?dpr=1&fit=crop&h=0&q=100&s=RUS6-M4n6ZCNWrKSLL2Z8w&w=680",
+            "status": "publish"
         },
         {
-            "id": 15,
-            "title": "Vietnam police uncover online gambling ring with over $38.6M in transactions processed",
-            "content": "Police in the northern province of Hung Yen have uncovered an online gambling ring operating through the Net.win website, with transactions worth more than VND1 trillion (US$38.61 million) processed through bank accounts linked to the system, authorities have said.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/gambling-ring-1790553456.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=9i0j1k2l3m"
+            "title": "Dollar slips against dong",
+            "content": "The U.S. dollar weakened slightly against the Vietnamese dong on Wednesday while remaining on track to finish September higher against major currencies.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/USDollarbanknotesareseeninthis-8517-9413-1790756496.webp?dpr=1&fit=crop&h=408&q=100&s=OMo1BiOb39eQxryXF9_uTA&w=680",
+            "status": "publish"
         },
         {
-            "id": 16,
-            "title": "Sneaker billionaire behind the biggest university gift in US history gives his alma mater $1B",
-            "content": "Nike co-founder Phil Knight and his wife, Penny, have pledged US$1 billion to the University of Oregon to create an engineering college, the largest known gift to a U.S. public flagship university.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/phil-knight-1790557890.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=0j1k2l3m4n"
+            "title": "Gold prices gain",
+            "content": "Vietnamese gold prices increased on Wednesday morning even as global gold prices headed toward a 6% monthly decline.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/233a0910-1790745283-5936-1790745304.jpg?dpr=1&fit=crop&h=408&q=100&s=4ddSCo58x0PiytZIdRjk7w&w=680",
+            "status": "publish"
         },
         {
-            "id": 17,
-            "title": "Dollar dips against dong",
-            "content": "The U.S. dollar weakened against the Vietnamese dong Monday morning while trading near a two-month high against some major peers.",
-            "imagePath": "https://i1-business.vnecdn.net/2026/09/28/usd-vnd-1790551234.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=1k2l3m4n5o"
+            "title": "World's richest woman grows $33B richer in a year without running a company",
+            "content": "Alice Walton, the world's richest woman, gained US$33 billion in wealth within a year despite not running a company of her own.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/foundation-img-jpeg-1790744050-5035-1790744205.jpg?dpr=1&fit=crop&h=0&q=100&s=cXacjkmW4F335bPmAECpyQ&w=680",
+            "status": "publish"
         },
         {
-            "id": 18,
-            "title": "Award-winning chemist leaves US professorship 2 months after promotion to return to China",
-            "content": "Chinese chemist Haotian Wang has joined Tongji University, just two months after being promoted to full professor at Rice University in the U.S.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/haotian-wang-1790554567.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=2l3m4n5o6p"
+            "title": "Bus, train fares in Asia's richest country to rise 7%",
+            "content": "Adult commuters in Singapore will pay more for bus and train rides from December 26, with fares rising 7% amid higher energy costs.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/A-shawn-6mdWIQD8SEc-unsplash-1-2016-5473-1790735521.png?dpr=1&fit=crop&h=0&q=100&s=BkzsxWC3KUvVsNkwbeeLrw&w=680",
+            "status": "publish"
         },
         {
-            "id": 19,
-            "title": "Which Southeast Asian university named world’s second best for engineering?",
-            "content": "This Southeast Asian university ranks second globally for engineering in the 2026–2027 U.S. News Best Global Universities rankings.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/nus-engineering-1790558901.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=3m4n5o6p7q"
+            "title": "Luckin Coffee has 100 outlets in Southeast Asia's smallest country",
+            "content": "China's largest coffee chain, Luckin Coffee, has opened its 100th store in Singapore after only three years in the market.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/29/727448554-n-jfif-1790654081-4468-1790654204.jpg?dpr=1&fit=crop&h=0&q=100&s=ZpfNrpcn8pGMKyE5p09_tQ&w=680",
+            "status": "publish"
         },
         {
-            "id": 20,
-            "title": "Chinese PhD quits psychiatrist career to deliver food, sing at bars",
-            "content": "A 31-year-old Chinese PhD quit her psychiatrist career to deliver food and sing at bars, saying she wanted greater freedom and control over her time.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/chinese-phd-1790552345.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=4n5o6p7q8r"
+            "title": "Singapore's 6-year-old homegrown patisserie to shutter by year-end",
+            "content": "Singaporean patisserie LUNA plans to close at the end of December 2026 after six years, citing rising operating and ingredient costs and changing consumer spending habits.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/651991343-n-jpeg-1790737424-5492-1790737560.jpg?dpr=1&fit=crop&h=0&q=100&s=JUFTojbo5sKIg0ipzzJL9g&w=680",
+            "status": "publish"
         },
         {
-            "id": 21,
-            "title": "Vietnamese professor at top US public school behind $44M research on earthquakes, aircraft",
-            "content": "Bui Thanh Tan never expected to become a professor, but now tackles problems from earthquakes to aircraft engines and medicine, with his research projects receiving over US$44 million in funding.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/bui-thanh-tan-1790556780.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=5o6p7q8r9s"
+            "title": "How exposure to dead peers may accelerate aging in fruit flies",
+            "content": "Researchers have found that exposure to dead members of the same species can trigger biological changes in fruit flies that are associated with faster aging.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/07/pexels-erik-karits-1788761704-2970-1788761717.jpg?dpr=1&fit=crop&h=0&q=100&s=QeSXpBJRXKYB8P43e60eFw&w=680",
+            "status": "publish"
         },
         {
-            "id": 22,
-            "title": "Silicon Valley tech giants launch $42M college alternative with no degree",
-            "content": "U.S. venture capital billionaires and tech giants are backing a new two-year college alternative offering 'AI-native' education for young people seeking careers or entrepreneurial opportunities in technology.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/silicon-valley-ai-1790550123.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=6p7q8r9s0t"
+            "title": "Chiefs of US chip giants Nvidia, AMD join advisory board of Asia's top university",
+            "content": "Nvidia CEO Jensen Huang and AMD CEO Lisa Su have joined an advisory board at Tsinghua University's School of Economics and Management in China.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/mixcollage-sep-am-1790737511-3987-1790737524.jpg?dpr=1&fit=crop&h=0&q=100&s=0IGDqRDwbG2J6TnJeuETbA&w=680",
+            "status": "publish"
         },
         {
-            "id": 23,
-            "title": "Harvard University named world's best in 16 STEM subjects",
-            "content": "Harvard University leads universities worldwide with 16 STEM subjects ranked first globally in the latest U.S. News Best Global Universities subject rankings.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/harvard-stem-1790553456.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=7q8r9s0t1u"
+            "title": "World's second-richest country brings semiconductor education to primary schools",
+            "content": "Singapore is introducing semiconductor education in primary schools through a two-year pilot program designed to help students understand coding, AI and the role of chips in modern technology.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/29/malay-teacher-in-red-tudung-te-8051-1734-1790646958.png?dpr=1&fit=crop&h=0&q=100&s=VK3k2NJB5PbLW96eSX1Snw&w=680",
+            "status": "publish"
         },
         {
-            "id": 24,
-            "title": "World's most valuable AI startup to open Singapore office in October, hire locally",
-            "content": "Anthropic, the world's most valuable AI startup at US$965 billion, will open a Singapore office in October and hire locally for a range of roles.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/anthropic-singapore-1790557890.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=8r9s0t1u2v"
+            "title": "World's top university builds swimming robot powered by living muscle cells",
+            "content": "Engineers at MIT have developed a paper-thin swimming robot powered by living muscle cells rather than a conventional motor.",
+            "imagePath": "https://vcdn1-english.vnecdn.net/2026/09/30/mit-robomuscle-press-179074251-8773-3066-1790742543.png?dpr=1&fit=crop&h=0&q=100&s=wvWnrUQaxlUrEQisJ8nGEg&w=680",
+            "status": "publish"
         },
         {
-            "id": 25,
-            "title": "Thailand mobilizes soldiers to tackle baggage backlog at Bangkok airport",
-            "content": "Soldiers were deployed Monday to help clear a baggage backlog at Bangkok's Suvarnabhumi Airport after widespread flooding prevented many ground-handling staff from reporting to work, causing flight delays over the weekend.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/thai-army-baggage-1790551234.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=9s0t1u2v3w"
-        },
-        {
-            "id": 26,
-            "title": "Hundreds of Korean passengers stranded at Bangkok airport for 14 hours amid heavy flooding",
-            "content": "Hundreds of Korean passengers scheduled to fly home with Thai Airways were stranded for more than 14 hours at Thailand's Suvarnabhumi Airport from Sunday night after heavy flooding in Bangkok disrupted departures.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/korean-passengers-1790555678.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=0t1u2v3w4x"
-        },
-        {
-            "id": 27,
-            "title": "Thailand airlines offer free flight changes as Bangkok flooding disrupts travel",
-            "content": "Thai airlines have introduced special measures, including free flight changes and travel credits, for passengers affected by flooding and severe traffic congestion in the capital Bangkok.",
-            "imagePath": "https://i1-english.vnecdn.net/2026/09/28/thai-airways-flood-1790559012.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=1u2v3w4x5y"
+            "title": "Exploring Vietnam's first climate heritage site, a century-old church",
+            "content": "The ruins of Hai Ly church on Xuong Dien beach in Ninh Binh have become a popular attraction after being recognized as Vietnam's first climate change heritage site.",
+            "imagePath": "https://vcdn1-dulich.vnecdn.net/2026/09/22/2aOboR0TCIjqogujMFLB4Bjfhl8Mdf6U87shHHRA-1790096240.jpg?dpr=1&fit=crop&h=0&q=100&s=PgLnTTI9vmSQ_zPzhbMrgA&w=1200",
+            "status": "publish"
         }
     ]
 }
-

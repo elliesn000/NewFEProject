@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        News Draft Page
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table.css" </head>
+
+
+<body>
+    <button><a href="../admin.html">Back to Admin Page</a></button>
+    <h1>News Draft Page</h1>
+
+    <table id="draft-table">
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>ImagePath</th>
+        </tr>
+    </table>
+
+    <button id="publish">Publish</button>
+
+    <script>
+        lcArticles = JSON.parse(localStorage.getItem("updateArticle"));
+        console.log(lcArticles);
+
+        var table = document.getElementById("draft-table");
+        let myTable = document.querySelector(`#draft-table`);
+
+        let ar = lcArticles;
+        let tr = document.createElement('tr');
+        tr.innerHTML = `
+                <td>${ar.title}</td>
+                <td>${ar.content}</td>
+                <td>${ar.status}</td>
+                <td><img class="table-img" src="${ar.imagePath}" alt="image"></td>
+            `;
+        myTable.appendChild(tr);
+
+
+        // for (let ar of lcArticles) {
+        //     if (ar.status === "draft") {
+        //         let tr = document.createElement('tr');
+        //         tr.innerHTML = `
+        //         <td>${ar.title}</td>
+        //         <td>${ar.content}</td>
+        //         <td>${ar.status}</td>
+        //         <td>${ar.imgPath}</td> 
+        //     `;
+        //         myTable.appendChild(tr); 
+        //     }
+        // }
+
+        document.getElementById("publish").addEventListener("click", function () {
+            console.log(ar.status);
+            ar.status = "publish";
+            console.log(ar);
+
+            lcArticles = JSON.parse(localStorage.getItem("article"));
+            console.log(lcArticles);
+            let updateArticles = lcArticles.concat(ar);
+            console.log(updateArticles);
+            lcUpArticles = JSON.stringify(updateArticles);
+            localStorage.setItem("article", lcUpArticles);
+            localStorage.removeItem("updateArticle");
+            alert("Published");
+        }
+        )
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

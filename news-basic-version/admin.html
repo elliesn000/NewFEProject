@@ -8,17 +8,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles-admin/button.css">
+  <link rel="stylesheet" href="admin/table.css">  
 
 
-  <script src="./services/news-db.js"></script>
 </head>
 
 
-<body>
-  <h1></h1>
-<button class="button">Create News</button>
-<div>View Draftted Menu</div>
+<body style="background-color:;">
+  <button><a href="./index.html">Back to Home Page</a></button>
+  <div>
+    <button class="button"><a href="./admin/news/creation.html">Create News</a></button>
+    <button><a href="./admin/news.html">View Draftted News</a></button>
+  </div>
+
+  <div>
+    <button id="show-all">Show All Articles</button>
+    <script src="services/news-db.js"></script>
+
+    <table id="show-table" style="display: none;">
+<tr>
+  <th>Title</th>
+  <th>Content</th>
+  <th>ImagePath</th>
+</tr>
+      
+    </table>
+  </div>
 
 
 </body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Creation Page
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <button><a href="../../admin.html">Back to Admin Page</a></button>
+    <h1>Creation Page</h1>
+
+    <form onsubmit="submitfc(event)">
+        <div>
+            <label for="title-input">Title News</label> <br>
+            <input type="text" id="title-input" required>
+        </div>
+
+        <div>
+            <label for="content-input">News Content</label> <br>
+            <textarea id="content-input"></textarea>
+        </div>
+
+        <div>
+            <label for="img-input">Insert link image</label> <br>
+            <input type="text" id="img-input" required>
+        </div>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script>        
+        function submitfc(event) {
+            event.preventDefault();
+            var titleIp = document.getElementById("title-input").value;
+            var contentIp = document.getElementById("content-input").value
+            var imgPathIp = document.getElementById("img-input").value
+
+            let articleObj = {
+                title: titleIp,
+                content: contentIp,
+                imagePath: imgPathIp,
+                status: "draft"
+            };
+
+            let stringArticle = JSON.stringify(articleObj);
+
+            
+            localStorage.setItem("updateArticle", stringArticle);
+
+            alert("Created");
+
+            // lcArticles = JSON.parse(localStorage.getItem("article"));
+
+
+            // let updateArticles = lcArticles.concat(articleObj);
+            // lcUpArticles = JSON.stringify(updateArticles);
+            // localStorage.setItem("article", lcUpArticles);            
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
