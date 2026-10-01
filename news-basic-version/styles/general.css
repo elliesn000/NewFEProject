@@ -7,8 +7,8 @@ body{
 
 
 /*----------general------------------------- */
-.left-section{background-color: beige}
-.right-section{background-color: lightgoldenrodyellow}
+/* .left-section{background-color: beige}
+.right-section{background-color: lightgoldenrodyellow} */
 
 .general{
     display: grid;
@@ -104,7 +104,6 @@ body{
 
 
 /*---------------news--------------------*/
-
 /* .news-left{background-color: lightblue}
 .news-mid{background-color: lightpink}
 .news-right{background-color: lightblue} */
@@ -120,8 +119,9 @@ body{
 .news-mid{
     margin: 0px 20px;
 }
-.news-right{
-    height: 520px;
+.news-right{    
+    display: flex;
+    flex-direction: column;
 }
 
 

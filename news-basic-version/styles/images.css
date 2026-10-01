@@ -4,15 +4,16 @@
     cursor: pointer;    
 }
 
-.news-1-img{
+.news-img{
     /* background-color: lightgoldenrodyellow; */
     object-fit: contain;
     width: 100%;
     cursor: pointer;
 }
 
-.news-2-img{
-    object-fit: contain;
+.news-small-img{
+    object-fit: cover;
     width: 100%;
+    height: 200px;
     cursor: pointer;
 }

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="styles/sub-menu.css">
   <link rel="stylesheet" href="styles/text.css">
 
-  <script src="sub-menu.js"></script>
+  <script src="services/load-news.js"></script>
 </head>
 
 
@@ -151,8 +151,6 @@
 
 
 
-
-
       <div class="trending-tab">
 
         <div class="trending-tab-left">
@@ -176,161 +174,33 @@
 
 
 
+      <!-- script in load-news.js -->
       <div class="news">
-
         <div class="news-left">
-
-          <div class="news-left-top">
-            <img class="news-1-img" src="images/news1-trending.webp">
-            <p class="news-title">
-              Dozens feared trapped in quake-hit Japan mall
-            </p>
-            <p class="news-info">
-              Dozens of people were feared trapped in a shopping mall in Japan on Tuesday after a major
-              earthquake
-              toppled buildings, sparked fires and reportedly killed one person and injured more than 100.
-            </p>
-          </div>
-
-          <div class="news-left-bot">
-            <p class="news-title">
-              Scientists say math can reveal patterns in love
-            </p>
-            <p class="news-info">
-              Mathematical models developed over three decades of research suggest romantic relationships
-              follow
-              measurable patterns that could help identify when couples are approaching a higher risk of
-              separation.
-            </p>
-          </div>
-
+          <div class="news-left-top" id="news-left-top"></div>
+          <div class="news-left-bot" id="news-left-bot"></div>
         </div>
-
-        <div class="news-mid">
-
-          <div class="news-mid-top">
-            <img class="news-2-img" src="images/news2-1-trending.webp" alt="">
-            <p class="news-title news-title-smaller">
-              Which Singapore university leads Southeast Asia in mathematics?
-            </p>
-            <p class="news-info news-info-smaller">
-              The university is ranked 32nd worldwide for mathematics in the latest U.S. News Best Global
-              Universities rankings, the highest position achieved by any Southeast Asian institution.
-            </p>
-          </div>
-
-          <div class="news-mid-bot">
-            <img class="news-2-img" src="images/news2-2-trending.webp" alt="">
-            <p class="news-title news-title-smaller">
-              Three Japanese restaurant staff jailed in Taiwan for serving expired wagyu
-            </p>
-            <p class="news-info news-info-smaller">
-              Three Japanese nationals who operated a barbecue restaurant in Taichung, Taiwan, have been
-              sentenced
-              to prison for knowingly serving customers expired wagyu beef.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="news-right">
-          <div class="right-most-top">
-            <span class="right-most-read">
-              Most Read
-            </span>
-            <span class="right-most-comment">
-              Most Commented
-            </span>
-          </div>
-          <div class="right-most-bot">
-            <div class="right-most-qtt">
-              1
-            </div>
-            <div class="right-most-text">
-              World's second-richest country offers nearly $400 in credits for youth to pursue hobbies
-              and
-              life skills
-            </div>
-          </div>
-          <div class="right-most-bot">
-            <div class="right-most-qtt">
-              2
-            </div>
-            <div class="right-most-text">
-              World's second-richest country leads Southeast Asia with two universities in global AI
-              top
-              10
-            </div>
-          </div>
-          <div class="right-most-bot">
-            <div class="right-most-qtt">
-              3
-            </div>
-            <div class="right-most-text">
-              From artist dream to global food brand: How George Quek built Singapore's BreadTalk
-              Group
-            </div>
-          </div>
-          <div class="right-most-bot">
-            <div class="right-most-qtt">
-              4
-            </div>
-            <div class="right-most-text">
-              Which Singapore university leads Southeast Asia in mathematics?
-            </div>
-          </div>
-        </div>
+        <div class="news-mid" id="news-mid"></div>
+        <table id="table-news" class="news-right">
+          <tr>
+            <th>Most Read</th>
+            <th>Most Commented</th>
+          </tr>
+        </table>
       </div>
-
-
-
-
 
       <div class="world-tab">
-        <div class="world-left">
-          World
-
-        </div>
-
-        <div class="world-right">
-
-        </div>
+        <div class="world-left">World</div>
+        <div class="world-right"></div>
       </div>
-
-
-      <div class="world">
-        <div class="world-columns">
-          <img class="news-1-img" src="images/word1.webp">
-          <p class="world-title">
-            China draws up safety rules for autonomous vehicles
-          </p>
-        </div>
-        <div class="world-columns">
-          <img class="news-1-img" src="images/word2.webp">
-          <p class="world-title">
-            2 members of British band Massive Attack banned from Singapore after Palestinian flag at concert
-        </div>
-        <div class="world-columns">
-          <img class="news-1-img" src="images/word3.webp">
-          <p class="world-title">
-            US government bans humanoid robots manufactured abroad
-          </p>
-
-        </div>
-        <div class="world-columns">
-          <img class="news-1-img" src="images/word4.webp">
-          <p class="world-title">
-            French DJ Kavinsky, famed for 'Nightcall', found dead in Paris
-        </div>
-      </div> <!-- end-world -->
-
+      <div class="world" id="world-news"></div>
+      <!-- end load-news -->
 
 
 
 
 
       <p class="back-to-top">Back to top</p>
-
 
 
       <div class="footer">

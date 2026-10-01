@@ -1,62 +1,25 @@
-.right-most-top {
-    /* background-color: lightgoldenrodyellow; */
-    display: flex;
+table tr {
+    border: 0px 0px 0px 0px; 
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.15);        
+}
+
+table th {
     align-items: center;
     height: 35px;
-    border-color: rgb(232, 232, 232);
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid rgb(232, 232, 232);
 }
 
-.right-most-read {
-    /* background-color: lightslategray; */
-    font-weight: bolder;
-    text-decoration: underline;
-    cursor: pointer;
-
-    margin-left: 30px;
-}
-
-.right-most-comment {
-    /* background-color: lightskyblue; */
-    cursor: pointer;
-
-    margin-left: 30px;
-}
-.right-most-comment:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.right-most-bot {
-    /* background-color: lightsteelblue; */
-    display: flex;
-    font-family: Montserrat, sans-serif;
-
-    border-color: rgb(232, 232, 232);
-    border-style: solid;
-    border-width: 2px;
-    margin-top: -1px;
-
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.right-most-qtt {
-    /* background-color: black; */
-    color: rgb(188, 186, 186);
+.table-qtt {
+    padding: 0px 10px;
+    color: rgba(0, 0, 0, 0.3);
     font-size: 25px;
     font-weight: bolder;
-    
-    padding-left: 10px;
-    padding-right: 10px;    
 }
-.right-most-text{
-    /* background-color: antiquewhite; */
+
+.table-text {
+    padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     cursor: pointer;
-}
-.right-most-text:hover{
-    text-decoration: underline;
 }
