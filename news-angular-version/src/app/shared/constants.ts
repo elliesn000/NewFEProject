@@ -5,10 +5,11 @@ export enum display {
 }
 
 export class article {
-     id = "id";
+  id = "id";
   title = "title";
   content = "content";
   imagePath = "imagePath";
 }
 
- 
+export class source
+

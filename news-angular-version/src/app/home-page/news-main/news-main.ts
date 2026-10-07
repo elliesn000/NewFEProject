@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { NewsCard } from '../news-card/news-card';
-import { article, display } from '../shared/constants';
-import newsDbJson from '../services/news-db.json';
+import { article, display } from '../../shared/constants';
+import newsDbJson from '../../services/news-db.json';
 import { NewsScrolling } from '../news-scrolling/news-scrolling';
 
 @Component({

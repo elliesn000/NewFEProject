@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule } from '@angular/material/card';
-import {display} from '../shared/constants';
+import {display} from '../../shared/constants';
 
 @Component({
   imports: [MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule],
