@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { NewsCard } from '../news-card/news-card';
-import { article, display } from '../../shared/constants';
-import newsDbJson from '../../services/news-db.json';
+import { display } from '../../services/constants';
+import newsDbJson from '../../services/initArticles.json';
 import { NewsScrolling } from '../news-scrolling/news-scrolling';
 
 @Component({
@@ -11,18 +11,19 @@ import { NewsScrolling } from '../news-scrolling/news-scrolling';
   templateUrl: './news-main.html',
 })
 export class NewsMain implements OnInit {
-  articles = [article];
+  
+  
+  
+  newsdata: any = newsDbJson.articles;
 
-  newsdata: any = newsDbJson; //create class
+  highlightArticles = this.newsdata.slice(0, 2);
+  normalArticles = this.newsdata.slice(2, 4);
+  mdArticles = this.newsdata.slice(1);
 
-  highlightArticles = this.newsdata.articles.slice(0, 2);
-  normalArticles = this.newsdata.articles.slice(2,4);
-  mdArticles = this.newsdata.articles.slice(1);
-
-  scrollingArticles = this.newsdata.articles;
+  scrollingArticles = this.newsdata;
 
 
-  ngOnInit(): void {};
+  ngOnInit(): void { };
 
   public landscapeDisplay: display = display.landscape;
   public normalDisplay: display = display.normal;
