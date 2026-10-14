@@ -2,10 +2,11 @@
 //and get from local storage -> obj
 //(save to local storage will be solve in each component)
 
+import { Service } from '@angular/core';
 import initJson from './initArticles.json';
-import { articleInitObj } from './constants';
+import { articleObj } from './constants';
 
-
+@Service()
 export class serviceLocalStorage {
 
     //function set item with key and value --- check try catch
@@ -13,7 +14,7 @@ export class serviceLocalStorage {
         //try-catch defense over memory >5GB
         try {
             localStorage.setItem(key, JSON.stringify(value))
-        } 
+        }
         catch (e) {
             console.error('Error saving', e);
         }
@@ -25,7 +26,7 @@ export class serviceLocalStorage {
         try {
             let arTemp = localStorage.getItem(key);
             return arTemp != null ? JSON.parse(arTemp) : null;
-        } 
+        }
         catch (e) {
             console.error('Error getting', e);
             return null;
@@ -34,21 +35,18 @@ export class serviceLocalStorage {
 
     //function remove all added articles by user and get all from initial Json
     renewItem(confirm: string): any {
-        if (confirm === "yes") {
-            // try-catch defense 
-            try {
+        // try-catch defense file init JSON
+        try {
+            if (confirm === "yes") {
                 localStorage.clear();
-                const initData: Array<articleInitObj> = initJson.articles;
-                for (let i: number = 0; i < initData.length; i++) {
-                    let arTemp: articleInitObj = initData[i];
-                    localStorage.setItem('$[i+1]', JSON.stringify(arTemp));
-                }
-            } catch (e) {
-                console.error('Error renew', e);
-                return null;
+                const initData: Array<articleObj> = initJson.articles;
+                console.log(initData.length);
+                localStorage.setItem(`initAr`, JSON.stringify(initData));
+                window.alert('renew finished');
             }
-            window.alert('renew finished');
+        } catch (e) {
+            console.error('Error renew', e);
+            return null;
         }
     }
-
 }

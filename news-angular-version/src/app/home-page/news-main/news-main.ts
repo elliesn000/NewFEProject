@@ -13,7 +13,6 @@ import { NewsScrolling } from '../news-scrolling/news-scrolling';
 export class NewsMain implements OnInit {
   
   
-  
   newsdata: any = newsDbJson.articles;
 
   highlightArticles = this.newsdata.slice(0, 2);

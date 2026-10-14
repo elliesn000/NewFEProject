@@ -1,3 +1,28 @@
-<p>admin-page works!</p>
-<!-- <table mat-table [articleSource]="ArSource"></table> -->
- <button matButton="outlined" (click)="renewClick()">Renew</button>
+<button matButton="outlined"> Create New </button>
+
+
+<table mat-table [dataSource]="arLocal" class="m-20px w-full mat-shadow-2">
+    <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let article, let i = index"> {{i+1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Title</th>
+        <td mat-cell *matCellDef="let article"> {{article.title}} </td>
+    </ng-container>
+    <ng-container matColumnDef="createDay">
+        <th mat-header-cell *matHeaderCellDef>Create Day</th>
+        <td mat-cell *matCellDef="let article">{{ article.createDay }}</td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>Status</th>
+        <td mat-cell *matCellDef="let article">{{article.status}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row
+        *matRowDef="let row; let i = index; columns: displayedColumns;"
+        routerLink="/details/{{i}}"
+        class="cursor-pointer"></tr>
+</table>
+
+<button matButton="outlined">Renew</button>

@@ -1,4 +1,4 @@
-import { empty } from "rxjs";
+
 
 export enum display {
   landscape = "landscape",
@@ -7,18 +7,11 @@ export enum display {
 }
 
 
-
-export class articleInitObj {
-  title: string ='';
-  content: string ='';
-  imagePath: string ='';
-  status: string ='';
-}
-
 export class articleObj {
-  id: number = 0;
   title: string ='';
+  createDay: string | number | Date ='';
   content: string ='';
   imagePath: string ='';
   status: string ='';
 }
+
