@@ -1,1 +1,38 @@
-<p>article-details works!</p>
+<div class="flex flex-col w-auto">
+
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput [formField]="arForm.title">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Content</mat-label>
+        <textarea matInput [formField]="arForm.content"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Image link</mat-label>
+        <input matInput [formField]="arForm.imagePath">        
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Status: publish/draft</mat-label>
+        <textarea matInput [formField]="arForm.status"></textarea>
+    </mat-form-field>
+
+    <button matButton="outlined" type="submit" [disabled]="arForm().invalid()"
+        (click)="onSubmit($event)">Finish</button>
+        
+        <mat-label>Create Day: {{arEdit().createDay}}</mat-label>
+</div>
+
+
+
+    <!-- <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select [formField]="arForm.status">
+            <mat-option value="draft">Draft</mat-option>
+            <mat-option value="publish">Publish</mat-option>
+        </mat-select>
+        
+    </mat-form-field> -->

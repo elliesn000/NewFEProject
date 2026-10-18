@@ -14,7 +14,6 @@
 
 @if(displayInput() === displayDefine.landscape){
 <mat-card class="card-news">
-
     <mat-card-header>
         <img mat-card-sm-image [src]="newsInput()?.imagePath">
         <mat-card-title-group>
@@ -28,8 +27,8 @@
 
 @if(displayInput() === displayDefine.noimg){
 <mat-card class="card-news">
-    <mat-card-title>
-        <p>{{ newsInput()?.title}}</p>
+    <mat-card-title class="!m-2 card-title">
+        <a href="#">{{ newsInput()?.title }}</a>
     </mat-card-title>
     <mat-card-content>
         <p>{{ newsInput()?.content }}</p>

@@ -7,7 +7,7 @@ import { PageCreate } from './page-create/page-create';
 export const routes: Routes = [
     {path: '', component: HomePage},
     {path: 'admin', component: AdminPage, title: 'Admin Page'},    
-    {path: 'details/:productId', component: ArticleDetails, title: '{{productId}}'},
+    {path: 'details/:id', component: ArticleDetails, title: 'detail'},
     {path: 'admin/create', component: PageCreate, title: 'Create Page'}
 ];
 

@@ -1,8 +1,8 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { NewsCard } from '../news-card/news-card';
-import { display } from '../../services/constants';
-import newsDbJson from '../../services/initArticles.json';
+import { articleObj, display } from '../../services/constants';
 import { NewsScrolling } from '../news-scrolling/news-scrolling';
+import { serviceLocalStorage } from '../../services/serviceLocalStorage';
 
 @Component({
   imports: [NewsCard, NewsScrolling],
@@ -11,9 +11,9 @@ import { NewsScrolling } from '../news-scrolling/news-scrolling';
   templateUrl: './news-main.html',
 })
 export class NewsMain implements OnInit {
-  
-  
-  newsdata: any = newsDbJson.articles;
+  private service = inject(serviceLocalStorage);
+  newsdata: Array<articleObj> = this.service.getItem();  
+
 
   highlightArticles = this.newsdata.slice(0, 2);
   normalArticles = this.newsdata.slice(2, 4);
@@ -22,7 +22,9 @@ export class NewsMain implements OnInit {
   scrollingArticles = this.newsdata;
 
 
-  ngOnInit(): void { };
+  ngOnInit(): void { 
+    console.log(this.newsdata);
+  };
 
   public landscapeDisplay: display = display.landscape;
   public normalDisplay: display = display.normal;

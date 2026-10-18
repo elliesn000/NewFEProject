@@ -20,16 +20,15 @@ export class serviceLocalStorage {
         }
     }
 
-    //function get item with key ---- key === id while setItem
-    getItem(key: string): any {
+    getItem(): Array<articleObj> {
         //try-catch defense not have data / JSON wrong can't define with Obj
         try {
-            let arTemp = localStorage.getItem(key);
-            return arTemp != null ? JSON.parse(arTemp) : null;
+            let arTemp = localStorage.getItem('arLocal');
+            return arTemp != null ? JSON.parse(arTemp) : [];
         }
         catch (e) {
             console.error('Error getting', e);
-            return null;
+            return [];
         }
     }
 
@@ -41,7 +40,7 @@ export class serviceLocalStorage {
                 localStorage.clear();
                 const initData: Array<articleObj> = initJson.articles;
                 console.log(initData.length);
-                localStorage.setItem(`initAr`, JSON.stringify(initData));
+                localStorage.setItem(`arLocal`, JSON.stringify(initData));
                 window.alert('renew finished');
             }
         } catch (e) {

@@ -1,1 +1,17 @@
-<p>page-create works!</p>
+<div class="flex flex-col">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput [formField]="articleForm.title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea matInput [formField]="articleForm.content"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Image link</mat-label>
+    <input matInput [formField]="articleForm.imagePath">
+  </mat-form-field>
+
+  <button matButton="outlined" type="submit" [disabled]="articleForm().invalid()"
+    (click)="onSubmit($event)">Submit</button>
+</div>

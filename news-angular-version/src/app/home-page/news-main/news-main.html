@@ -7,13 +7,13 @@
  
     
     <div id="lopp-in-md" class="block md:hidden">
-        @for (item of mdArticles; track item.id){
+        @for (item of mdArticles; track item.title){
             <app-news-card [newsInput]="item" [displayInput]="landscapeDisplay"></app-news-card>
         }
     </div>
 
     <div id="2a" class="hidden md:block">
-        @for (item of normalArticles; track item.id){
+        @for (item of normalArticles; track item.title){
             <app-news-card [newsInput]="item" [displayInput]="normalDisplay"></app-news-card>
         }
     </div>

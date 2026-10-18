@@ -1,8 +1,6 @@
 <cdk-virtual-scroll-viewport itemSize="50" class="viewport">
-  <div *cdkVirtualFor="let item of scrollingInput() " class="flex">
-    <span class="w-8">{{ item?.id }}</span>
-    <span class="">{{ item?.title }}</span>
-    <!-- ?? -->
-    
+  <div *cdkVirtualFor="let item of scrollingInput() let i = index " class="flex">
+    <span class="m-2 w-[8px]">{{ i + 1 }}</span>
+    <span class="">{{ item?.title }}</span>    
 </div>
 </cdk-virtual-scroll-viewport>

@@ -6,7 +6,6 @@ import { articleObj } from '../services/constants';
 import { RouterLink } from '@angular/router';
 
 
-
 @Component({
   imports: [MatButton, MatTableModule, RouterLink],
   selector: 'app-admin-page',
@@ -17,12 +16,12 @@ import { RouterLink } from '@angular/router';
 
 export class AdminPage implements OnInit{
   private service = inject(serviceLocalStorage);
-  arLocal: articleObj[] = this.service.getItem("initAr");
+  protected arLocal: articleObj[] = this.service.getItem();
   
   
   ngOnInit(){}
 
-  displayedColumns: string[] = ['number', 'title', 'createDay', 'status'];
+  displayedColumns: string[] = ['number', 'title', 'imagePath', 'createDay', 'status'];
 
   @ViewChild(MatTable) table!: MatTable<articleObj>;
 
