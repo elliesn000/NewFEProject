@@ -1,7 +1,3 @@
-//class to get data from json -> import local storage
-//and get from local storage -> obj
-//(save to local storage will be solve in each component)
-
 import { Service } from '@angular/core';
 import initJson from './initArticles.json';
 import { articleObj } from './constants';
@@ -38,7 +34,7 @@ export class serviceLocalStorage {
         try {
             if (confirm === "yes") {
                 localStorage.clear();
-                const initData: Array<articleObj> = initJson.articles;
+                const initData: any = initJson.articles;
                 console.log(initData.length);
                 localStorage.setItem(`arLocal`, JSON.stringify(initData));
                 window.alert('renew finished');

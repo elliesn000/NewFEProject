@@ -1,5 +1,3 @@
-
-
 export enum display {
   landscape = "landscape",
   normal = "normal",
@@ -12,6 +10,23 @@ export class articleObj {
   createDay: string | number | Date ='';
   content: string ='';
   imagePath: string ='';
-  status: string ='';
+  status: 'draft' | 'public' = 'draft';
 }
 
+export type articleStatus = 'draft' | 'public';
+
+export interface Article {
+  id: string;
+  title: string;
+  content: string;
+  imagePath: string;
+  status: articleStatus;
+  createdDay: string;
+}
+
+export interface ArticleFormValue {
+  title: string;
+  content: string;
+  imagePath: string;
+  status: articleStatus;
+}

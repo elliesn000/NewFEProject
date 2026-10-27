@@ -1,0 +1,30 @@
+<form (submit)="onSubmit($event)">
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput [formField]="arForm.title">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Content</mat-label>
+        <textarea matInput [formField]="arForm.content"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Image Link</mat-label>
+        <input matInput [formField]="arForm.imagePath">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select [formField]="arForm.status">
+            <mat-option value="draft">Draft</mat-option>
+            <mat-option value="public">Public</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button matButton="outlined" type="submit" >
+        Submit
+    </button>
+</form>
+
+
