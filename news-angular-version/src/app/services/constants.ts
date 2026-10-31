@@ -4,15 +4,6 @@ export enum display {
   noimg = "noimg",
 }
 
-
-export class articleObj {
-  title: string ='';
-  createDay: string | number | Date ='';
-  content: string ='';
-  imagePath: string ='';
-  status: 'draft' | 'public' = 'draft';
-}
-
 export type articleStatus = 'draft' | 'public';
 
 export interface Article {
@@ -24,9 +15,4 @@ export interface Article {
   createdDay: string;
 }
 
-export interface ArticleFormValue {
-  title: string;
-  content: string;
-  imagePath: string;
-  status: articleStatus;
-}
+export type ArticleFormValue = Pick<Article, 'title' | 'content' | 'imagePath' | 'status'>;

@@ -1,7 +1,7 @@
-import { Component, signal, input, output, linkedSignal } from '@angular/core';
+import { Component, input, output, linkedSignal } from '@angular/core';
 import { form, FormField, maxLength, pattern, required, submit } from '@angular/forms/signals'
 import { Article, ArticleFormValue } from '../services/constants';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatAnchor } from '@angular/material/button';
 import { MatSelect, MatOption } from '@angular/material/select';
@@ -27,18 +27,20 @@ export class ArticleForm {
     })
   });
 
-  readonly arForm = form(this.arData, (schemaPath) => {
-    required(schemaPath.title, { message: 'title can not empty' });
-    maxLength(schemaPath.title, 60, { message: 'title is too long, need < 60 characters' })
-    pattern(schemaPath.title, /^[a-z A-Z]+$/, { message: 'title need only characters' });
-    maxLength(schemaPath.content, 500, { message: 'content is too long, need < 500 characters' })
+  readonly arForm = form(this.arData, (a) => {
+    required(a.title, { message: 'Title can not empty' });
+    maxLength(a.title, 60, { message: 'Title is too long, need < 60 characters' })    
+    maxLength(a.content, 1000, { message: 'Content is too long, need < 1000 characters' })
   });
 
   readonly saved = output<ArticleFormValue>();
 
   onSubmit(event: Event) {
     event.preventDefault();
-    this.saved.emit({ ...this.arData() });
+    submit(this.arForm, async () => {
+      this.saved.emit({ ...this.arData() });  
+    })
+    
   }
 }
 

@@ -1,9 +1,27 @@
 import { Service } from '@angular/core';
 import initJson from './initArticles.json';
-import { articleObj } from './constants';
+import { Article } from './constants';
+
+const key = 'arLocal';
 
 @Service()
 export class serviceLocalStorage {
+
+    getAll(): Article[] {
+        try {
+            const arData = localStorage.getItem(key);
+            if (arData === null) {                
+                const arTemp: Article[] = initJson.articles;
+                this.saveAll(arTemp);
+                return arTemp;
+            }
+
+
+        } catch (e) {
+            console.error('Error getting', e);
+            return [];
+        }
+    }
 
     //function set item with key and value --- check try catch
     setItem(key: string, value: any): void {
