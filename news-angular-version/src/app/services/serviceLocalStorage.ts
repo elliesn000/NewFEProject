@@ -9,57 +9,46 @@ export class serviceLocalStorage {
 
     getAll(): Article[] {
         try {
-            const arData = localStorage.getItem(key);
-            if (arData === null) {                
-                const arTemp: Article[] = initJson.articles;
+            const arToGet = localStorage.getItem(key);
+            if (arToGet === null) {
+                const arTemp = initJson.articles as Article[];
                 this.saveAll(arTemp);
                 return arTemp;
             }
-
-
+            return JSON.parse(arToGet) as Article[];
         } catch (e) {
-            console.error('Error getting', e);
+            console.error(e);
             return [];
         }
     }
 
-    //function set item with key and value --- check try catch
-    setItem(key: string, value: any): void {
-        //try-catch defense over memory >5GB
-        try {
-            localStorage.setItem(key, JSON.stringify(value))
-        }
-        catch (e) {
-            console.error('Error saving', e);
-        }
+    getById(id: string): Article | null {
+        return this.getAll().find((a) => a.id === id) ?? null;
     }
 
-    getItem(): Array<articleObj> {
-        //try-catch defense not have data / JSON wrong can't define with Obj
-        try {
-            let arTemp = localStorage.getItem('arLocal');
-            return arTemp != null ? JSON.parse(arTemp) : [];
-        }
-        catch (e) {
-            console.error('Error getting', e);
-            return [];
-        }
+    add(article: Article): void {
+        this.saveAll([article, ...this.getAll()]);
     }
 
-    //function remove all added articles by user and get all from initial Json
-    renewItem(confirm: string): any {
-        // try-catch defense file init JSON
+    update(article: Article): void {
+        this.saveAll(this.getAll().map((a) => (a.id === article.id ? article : a)));
+    }
+
+    renew(): void {
         try {
-            if (confirm === "yes") {
-                localStorage.clear();
-                const initData: any = initJson.articles;
-                console.log(initData.length);
-                localStorage.setItem(`arLocal`, JSON.stringify(initData));
-                window.alert('renew finished');
-            }
+            localStorage.removeItem(key);
+            this.getAll();
         } catch (e) {
-            console.error('Error renew', e);
-            return null;
+            console.error(e);
+        }
+    }
+
+
+    private saveAll(arToSave: Article[]): void {
+        try {
+            localStorage.setItem(key, JSON.stringify(arToSave));
+        } catch (e) {
+            console.error(e);
         }
     }
 }
