@@ -1,1 +1,9 @@
-<app-article-form></app-article-form>
+<div class="p-5">
+  @if (article(); as ar) {
+  <h2 class="text-2xl font-bold mb-4">Edit article</h2>
+  <app-article-form [arInput]="ar" buttonSubmit="Update" (saved)="onSaved($event)" (cancelSubmit)="onCancel()" />
+  } @else {
+  <p>Post not found</p>
+  <a routerLink="/admin">Return</a>
+  }
+</div>

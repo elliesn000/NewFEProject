@@ -1,30 +1,41 @@
-<form (submit)="onSubmit($event)">
+<form novalidate (submit)="onSubmit($event)">
     <mat-form-field>
         <mat-label>Title</mat-label>
-        <input matInput [formField]="arForm.title">
+        <input matInput [formField]="arForm.title" />
     </mat-form-field>
+    <app-field-error [field]="arForm.title" />
 
-    <mat-form-field>
+    <mat-form-field class="w-full">
         <mat-label>Content</mat-label>
-        <textarea matInput [formField]="arForm.content"></textarea>
+        <textarea matInput rows="8" [formField]="arForm.content"></textarea>
     </mat-form-field>
+    <app-field-error [field]="arForm.content" />
 
-    <mat-form-field>
+    <mat-form-field class="w-full">
         <mat-label>Image Link</mat-label>
-        <input matInput [formField]="arForm.imagePath">
+        <input matInput [formField]="arForm.imagePath" />
     </mat-form-field>
+    <app-field-error [field]="arForm.imagePath" />
+    @if (imageWarning()) {
+    <p class="field-warning">{{ imageWarning() }}</p>
+    }
 
-    <mat-form-field>
+    <mat-form-field class="w-full">
         <mat-label>Status</mat-label>
+        
         <mat-select [formField]="arForm.status">
             <mat-option value="draft">Draft</mat-option>
             <mat-option value="public">Public</mat-option>
         </mat-select>
     </mat-form-field>
+    <app-field-error [field]="arForm.status" />
 
-    <button matButton="outlined" type="submit" >
-        Submit
-    </button>
+    <div class="button">
+        <button matButton="outlined" type="submit">{{ buttonSubmit() }}</button>
+        <button matButton type="button" (click)="cancelSubmit.emit()">Return AdminPage</button>
+
+    </div>
+
 </form>
 
 

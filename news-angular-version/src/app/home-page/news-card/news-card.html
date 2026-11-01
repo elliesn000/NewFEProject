@@ -1,37 +1,34 @@
-<!-- change colore bg -->
-@if(displayInput() === displayDefine.normal){
-<mat-card class="card-news">
-    <img class="card-img" mat-card-image [src]="newsInput()?.imagePath">
-    <mat-card-title class="!m-2 card-title">
-        <a href="#">{{ newsInput()?.title }}</a>
+@if (displayInput() === displayDefine.normal) {
+<mat-card class="card-news !shadow-none !rounded-none !bg-transparent">
+    <img class="aspect-[3/2] w-full object-cover !rounded-none" mat-card-image [src]="newsInput().imagePath"
+        [alt]="newsInput().title" />
+    <mat-card-title class="!m-2 !text-lg !font-bold">
+        <a href="#">{{ newsInput().title }}</a>
     </mat-card-title>
-    <mat-card-content class="!mx-2 card-content">
-        <a href="#">{{ newsInput()?.content }}</a>
+    <mat-card-content class="!mx-2 line-clamp-3 text-gray-600">
+        {{ newsInput().content }}
     </mat-card-content>
 </mat-card>
 }
 
-
-@if(displayInput() === displayDefine.landscape){
-<mat-card class="card-news">
+@if (displayInput() === displayDefine.landscape) {
+<mat-card class="card-news !shadow-none !rounded-none !bg-transparent">
     <mat-card-header>
-        <img mat-card-sm-image [src]="newsInput()?.imagePath">
+        <img mat-card-sm-image [src]="newsInput().imagePath" [alt]="newsInput().title" />
         <mat-card-title-group>
-            <mat-card-subtitle class="!ml-2">{{ newsInput()?.title }}</mat-card-subtitle>
+            <mat-card-subtitle class="!ml-2">{{ newsInput().title }}</mat-card-subtitle>
         </mat-card-title-group>
     </mat-card-header>
-
 </mat-card>
 }
 
-
-@if(displayInput() === displayDefine.noimg){
-<mat-card class="card-news">
-    <mat-card-title class="!m-2 card-title">
-        <a href="#">{{ newsInput()?.title }}</a>
+@if (displayInput() === displayDefine.noimg) {
+<mat-card class="card-news !shadow-none !rounded-none !bg-transparent">
+    <mat-card-title class="!m-2 !text-2xl !font-bold">
+        <a href="#">{{ newsInput().title }}</a>
     </mat-card-title>
-    <mat-card-content>
-        <p>{{ newsInput()?.content }}</p>
+    <mat-card-content class="!mx-2 line-clamp-3 text-gray-600">
+        {{ newsInput().content }}
     </mat-card-content>
 </mat-card>
 }

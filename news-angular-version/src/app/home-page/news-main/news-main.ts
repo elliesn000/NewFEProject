@@ -1,33 +1,33 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
 import { NewsCard } from '../news-card/news-card';
-import { articleObj, display } from '../../services/constants';
 import { NewsScrolling } from '../news-scrolling/news-scrolling';
 import { serviceLocalStorage } from '../../services/serviceLocalStorage';
+import { Article, display } from '../../services/constants';
 
 @Component({
-  imports: [NewsCard, NewsScrolling],
+  imports: [NewsCard, NewsScrolling, MatTabsModule, MatCardModule],
   selector: 'app-news-main',
   styleUrl: './news-main.scss',
   templateUrl: './news-main.html',
 })
-export class NewsMain implements OnInit {
+export class NewsMain {
   private service = inject(serviceLocalStorage);
-  newsdata: Array<articleObj> = this.service.getItem();  
 
+  newsdata: Article[] = this.service
+    .getAll()
+    .filter((a) => a.status === 'public')
+    .sort((a, b) => new Date(b.createdDay).getTime() - new Date(a.createdDay).getTime());
 
   highlightArticles = this.newsdata.slice(0, 2);
   normalArticles = this.newsdata.slice(2, 4);
   mdArticles = this.newsdata.slice(1);
 
-  scrollingArticles = this.newsdata;
-
-
-  ngOnInit(): void { 
-    console.log(this.newsdata);
-  };
+  mostReadArticles = this.newsdata;
+  mostCommentedArticles = [...this.newsdata].reverse();
 
   public landscapeDisplay: display = display.landscape;
   public normalDisplay: display = display.normal;
   public noimgDisplay: display = display.noimg;
-
 }

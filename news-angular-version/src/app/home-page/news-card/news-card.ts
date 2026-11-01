@@ -1,17 +1,15 @@
 import { Component, input } from '@angular/core';
-import { MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule } from '@angular/material/card';
-import {display} from '../../services/constants';
+import { MatCardModule } from '@angular/material/card';
+import { Article, display } from '../../services/constants';
 
 @Component({
-  imports: [MatCard, MatCardImage, MatCardTitle, MatCardContent, MatCardModule],
+  imports: [MatCardModule],
   selector: 'app-news-card',
   styleUrl: './news-card.scss',
   templateUrl: './news-card.html',
 })
 export class NewsCard {
-  newsInput = input<any>();
+  newsInput = input.required<Article>();
   displayInput = input<display>(display.normal);
-  displayDefine = display;  
+  displayDefine = display;
 }
-
-
