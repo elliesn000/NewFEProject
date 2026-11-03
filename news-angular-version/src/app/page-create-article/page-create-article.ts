@@ -18,6 +18,7 @@ export class PageCreateArticle {
   private readonly form = viewChild.required(ArticleForm);
 
   onSave(value: ArticleFormValue) {
+
     const article: Article = {
       ...value,
       id: crypto.randomUUID(),
@@ -33,7 +34,7 @@ export class PageCreateArticle {
       .subscribe(() => this.router.navigate(['/admin']));
   }
 
-  onCancel() {
+  backToAdmin() {
     this.router.navigate(['/admin']);
   }
 }

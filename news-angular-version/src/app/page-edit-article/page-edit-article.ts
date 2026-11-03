@@ -31,7 +31,7 @@ export class PageEditArticle {
       .subscribe(() => this.router.navigate(['/admin']));
   }
 
-  onCancel() {
+  backToAdmin() {
     this.router.navigate(['/admin']);
   }
 }

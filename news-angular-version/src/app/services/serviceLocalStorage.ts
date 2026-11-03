@@ -6,6 +6,14 @@ const key = 'arLocal';
 
 @Service()
 export class serviceLocalStorage {
+    
+    private saveAll(arToSave: Article[]): void {
+        try {
+            localStorage.setItem(key, JSON.stringify(arToSave));
+        } catch (e) {
+            console.error(e);
+        }
+    }
 
     getAll(): Article[] {
         try {
@@ -30,23 +38,14 @@ export class serviceLocalStorage {
         this.saveAll([article, ...this.getAll()]);
     }
 
-    update(article: Article): void {
-        this.saveAll(this.getAll().map((a) => (a.id === article.id ? article : a)));
+    update(articleToUpdate: Article): void {
+        this.saveAll(this.getAll().map((a) => (a.id === articleToUpdate.id ? articleToUpdate : a)));
     }
 
     renew(): void {
         try {
             localStorage.removeItem(key);
             this.getAll();
-        } catch (e) {
-            console.error(e);
-        }
-    }
-
-
-    private saveAll(arToSave: Article[]): void {
-        try {
-            localStorage.setItem(key, JSON.stringify(arToSave));
         } catch (e) {
             console.error(e);
         }

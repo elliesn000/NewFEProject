@@ -7,7 +7,7 @@ import { MatOption, MatSelect } from '@angular/material/select';
 import { MatButton } from '@angular/material/button';
 
 
-const TITLE_REGEX = /^[\p{L}\p{N} ]+$/u;
+const TITLE_REGEX = /^[^<>{}\[\]\\|^`~@#*]+$/u;
 
 const IMAGE_REGEX = /^(https?:\/\/|\/).+\.(png|jpe?g|webp|gif)(\?.*)?$/i;
 
@@ -19,8 +19,8 @@ const IMAGE_REGEX = /^(https?:\/\/|\/).+\.(png|jpe?g|webp|gif)(\?.*)?$/i;
 })
 export class ArticleForm {
   readonly arInput = input<Article | null>(null);
-  readonly buttonSubmit = input('Save');
-  readonly cancelSubmit = output<void>();
+  readonly submitLabel = input('Save');
+  readonly cancelled = output<void>();
   readonly saved = output<ArticleFormValue>();
 
   readonly arData = linkedSignal({
@@ -41,7 +41,7 @@ export class ArticleForm {
         ? { kind: 'blank', message: 'title not only spaces' }
         : undefined,
     );
-    pattern(a.title, TITLE_REGEX, { message: 'title only letters, numbers, spaces' });
+    pattern(a.title, TITLE_REGEX, { message: 'title invalid' });
     maxLength(a.title, 60, { message: 'title is too long, need < 60 characters' });
 
     //content

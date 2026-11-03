@@ -22,7 +22,7 @@
 
     <mat-form-field class="w-full">
         <mat-label>Status</mat-label>
-        
+
         <mat-select [formField]="arForm.status">
             <mat-option value="draft">Draft</mat-option>
             <mat-option value="public">Public</mat-option>
@@ -31,11 +31,10 @@
     <app-field-error [field]="arForm.status" />
 
     <div class="button">
-        <button matButton="outlined" type="submit">{{ buttonSubmit() }}</button>
-        <button matButton type="button" (click)="cancelSubmit.emit()">Return AdminPage</button>
-
+        <button matButton="outlined" type="submit">
+            {{ submitLabel() }}</button>
+        <button matButton="outlined" type="button" (click)="cancelled.emit()">
+            Return AdminPage</button>
     </div>
 
 </form>
-
-
